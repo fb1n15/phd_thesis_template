@@ -1,0 +1,15 @@
+# Fdb version 3
+["pdflatex"] 1561646707 "lstdefinitions.tex" "lstdefinitions.pdf" "lstdefinitions" 1561646707
+  "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm" 1136768653 1436 f00b2a275be56a8355f5c3b07a5a7a4c ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm" 1136768653 1384 8943063000d26272532f74ca134dfecd ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txtt.fd" 1137111002 1324 7b6c95370a64cd8c7620cbefefb53dba ""
+  "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
+  "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1559473955 4259635 58e11804ed00567ebc48a2f54cee953e ""
+  "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
+  "lstdefinitions.aux" 1561646041 8 a94a2480d3289e625eea47cd1b285758 ""
+  "lstdefinitions.tex" 1561643050 1458 5007310156eeadf6c75b2f918c2864ce ""
+  (generated)
+  "lstdefinitions.pdf"
+  "lstdefinitions.log"

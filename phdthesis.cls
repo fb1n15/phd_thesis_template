@@ -154,14 +154,19 @@
       \smallskip
       {\LARGE \@author \par}
       \vfill
-      {\large A thesis submitted for the degree of \par}
-      {\large Doctor of Philosophy \par}
+      {\large A mini-thesis submitted for transfer from MPhil to PhD \par}
+      
       \bigskip
       \bigskip
-      {\large in the \par}
-      {\large \@faculty\par \par}
-      {\large \@department\par \par}
+      {\large \bf Supervisors: \par}
+      {\large Doctor Sebastian Stein \par}
+      {\large Doctor Enrico Gerding \par}
+      {\large Professor Nicholas R. Jennings \par}
       \bigskip
+      \bigskip
+      {\large \bf Examiners: \par}
+      {\large Professor Geoff Merrett \par \par}
+      {\large Doctor Jie Zhang \par \par}
       \bigskip
       \bigskip
       {\Large \@date \par}
@@ -195,11 +200,11 @@
     {\normalsize \FACULTY\par \par}
     {\normalsize \DEPARTMENT\par \par}
     \bigskip
-    {\normalsize \underline{Doctor of Philosophy}\par \par}
+    {\normalsize \underline{A progress report submitted for continuation towards a PhD}\par \par}
     \bigskip
-    {\normalsize\bf\MakeUppercase \@title \par \par}
-    \medskip
-    {\normalsize by \@author \par \par}
+%     {\normalsize\bf\MakeUppercase \@title \par \par}
+%     \medskip
+    {\normalsize \@author \par \par}
     \bigskip
   \end{center}
 }

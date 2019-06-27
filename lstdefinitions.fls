@@ -1,0 +1,12 @@
+PWD /Users/fan/Desktop/phd_thesis_template
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT lstdefinitions.tex
+OUTPUT lstdefinitions.log
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txtt.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txtt.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
