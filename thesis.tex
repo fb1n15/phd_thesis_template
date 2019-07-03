@@ -423,12 +423,12 @@ This report consists of five chapters. Specifically, in Chapter~\ref{literature 
 \chapter{Literature Review} \label{literature review}
 
 %Similarly, in the related work, you need to refer back to the challenges and say why they don't address them.
-Resource allocation mechanisms are algorithms that assign available scarce resources to different users or tasks. The resources can be electric power in the electricity grid, computational resources in data centres or bandwidth resources in networks. In this chapter, we provide the necessary background for our research and relevant literature on resource allocation mechanisms for non-strategic settings and truthful resource allocation mechanisms for strategic settings. Our main aim is to explore the progress of current research, their advantages and disadvantages and evaluate the extent to which the research challenges in Section \ref{challenges} have already been addressed and what research gaps are still left open.
+Since the main aim of our work is to design a truthful mechanism that is efficient in terms of social welfare as described in the previous chapter. In this chapter, we provide the necessary background for our research and relevant literature on resource allocation mechanisms for non-strategic settings and truthful resource allocation mechanisms for strategic settings. Our main aim is to explore the progress of current research, their advantages and disadvantages and evaluate the extent to which the research challenges in Section \ref{challenges} have already been addressed and what research gaps are still left open.
 
-We begin our literature review with the relevant knowledge in algorithmic game theory (Section \ref{preliminaries}) including the pertinent concepts of game theory, mechanism design and online mechanism design because they are the fundamental theory of the approach we take to design mechanisms that work in strategic settings (Challenge \ref{itm: Challenge truthful}). Then in Sections \ref{general multiagent resource allocation}, \ref{cloud computing resource allocation} and \ref{fog computing resource allocation}, we examine the work on general multiagent resource allocation (MARA), resource allocation in cloud computing (RACC) and resource allocation in fog computing (RAFC) respectively, and discuss what challenges they address and what challenges are still open. Finally, Section \ref{literature review summary} summarises our findings and the main research gaps according to our research challenges.
+We begin our literature review with the relevant knowledge in algorithmic game theory (Section \ref{preliminaries}) including the pertinent concepts of game theory, mechanism design and online mechanism design because it is the theory of designing mechanisms that achieve a specific outcome including truthfulness (Challenge \ref{itm: Challenge truthful}). Then in Sections \ref{general multiagent resource allocation}, \ref{cloud computing resource allocation} and \ref{fog computing resource allocation}, we examine the work on general multiagent resource allocation (MARA), resource allocation in cloud computing (RACC) and resource allocation in fog computing (RAFC) respectively, and discuss what challenges they address and what challenges are still open. Finally, Section \ref{literature review summary} summarises our findings and the main research gaps according to our research challenges.
 
 \section{Preliminaries} \label{preliminaries}
-Given that mechanism design is the main approach we use to deal with the problem of resource allocation in strategic settings (Challenge \ref{itm: Challenge truthful}), in what follows we explain the main concepts before proceeding to related work. Mechanism design is a domain in game theory (i.e., the study of participants' strategies and behaviours in a certain game, which means a formal model of an interactive situation). It studies how to design the mechanism, which makes decisions of resource allocation and money transfer, of a game to achieve certain desirable properties or outcomes under the assumption that all participants are rational~\citep{hurwicz1973design}. 
+Given that mechanism design is the theory we use to deal with the problem of resource allocation in strategic settings (Challenge \ref{itm: Challenge truthful}), in what follows we explain the main concepts before proceeding to related work. If the reader is familier with the basics of game theory and mechanism design, they can choose to skip this section. Mechanism design is a domain in game theory (i.e., the study of participants' strategies and behaviours in a certain game, which means a formal model of an interactive situation). It studies how to design the mechanism, which makes decisions of resource allocation and money transfer, of a game to achieve certain desirable properties or outcomes under the assumption that all participants are rational~\citep{hurwicz1973design}. 
 
 Traditionally, game theory and mechanism design are widely used in the field of microeconomics as important analysis tools. Furthermore, they are also used in some computer science problems such as sponsored search auctions~\citep{zhu2012truthful}, spectrum auctions~\citep{qin2015sponsored} and bandwidth allocation~\citep{wu2012auction}. Particularly, online mechanism design is an extension of mechanism design which deals with problems in a dynamic environment (Challenge \ref{itm: Challenge online}) where agents are allowed to come and go at any time, such as the smart grid, cloud computing or fog computing. In contrast, classic mechanism design only deals with static environments. For example, in a spectrum auction, telecommunications suppliers submit their bids before the deadline and the spectrum allocation decisions are made all at once. Similarly, in sponsored search auctions, once someone searches online, the advertisers bid for advertisement slots simultaneously, and then a decision is made to decide how all the slots will be assigned. 
 
@@ -437,20 +437,19 @@ In Section \ref{game theory}, we introduce the basic concepts of game theory. In
 
 \subsection{Game Theory} \label{game theory}
 
-Game theory is ``the study of mathematical models of conflict and cooperation between intelligent rational decision-makers"~\citep{roger1991game}. In more details, in game theory, decision makers are often called agents, players or participants, and we use the term agents in this thesis. To analyse agents' behaviours, we must make assumptions about how they behave. In game theory, this assumption is that all agents are rational, which means they always strive to maximise their utility. The utility of an agent is the quantification of its preference over all outcomes of a game, that is, a real number is assigned to each outcome, and this is defined as its utility. If the utility of outcome $ a $ is greater than that of outcome $ b $ for the agent, then it prefers outcome $ a $ to outcome $ b $. In the game, every agent tries to get the best outcome for itself and also knows that other agents similarly try to achieve the best outcomes for themselves. In order to achieve this goal, agents follow strategies that decide their behaviours in all situations. Researchers in game theory have applied these mathematical models to understand decision making in economics~\citep{gu2005price,kelly2003decision}, biology~\citep{hammerstein1994game,dugatkin2000game} and multi-agent systems~\citep{parsons2002game,semsar2009multi}.
-
-In game theory, a simultaneous game (e.g., rock-paper-scissors) is a game where each agent chooses its actions without any knowledge of the actions of other agents. First of all, we present a rigorous mathematical definition of a simultaneous game, so that we can introduce other concepts based on it.
-Formally, we define a simultaneous game as consisting of a finite set $I$ of agents, $I = \{1,2,...,n \}$. The relevent traits of agent $ i $ (e.g., preferences and time constraints ) is summarised as the type $ \theta_i \in \Theta_{i} $ of that agent, and the type profile $ \theta = \{ \theta_1, \theta_2, \ldots, \theta_n\} $ is the set of all agents' types. The behaviour of agent $ i $ is captured by a function that maps from its all possible types to its set of actions: $\Theta_i \rightarrow X_i$, which is called the strategy of agent $ i $. $S_i$ is the set of all strategies of agent $i$. The strategy of agent $i$ and the strategies vector of other agents are $s_i$ and $s_{-i}$, respectively. Then the vector of strategies selected by all agents is $s=(s_1,s_2...,s_n)$. The set of all possible vectors of strategies is denoted as $S$, and the set of all possible vectors of strategies except agent $i$'s is $S_{-i}$. The utility of agent $i$ when it plays strategy $s_i$ and others play strategy $s_{-i}$ is $u_i(s_i,s_{-i}) \in \mathbb{R}$. 
+Game theory is ``the study of mathematical models of conflict and cooperation between intelligent rational decision-makers"~\citep{roger1991game}. In more details, in game theory, decision makers are often called agents, players or participants, and we use the term agents in this thesis. To analyse agents' behaviours, we must make assumptions about how they behave. In game theory, this assumption is that all agents are rational, which means they always strive to maximise their utility. The utility of an agent is the quantification of its preference over all outcomes of a game, that is, a real number is assigned to each outcome, and this is defined as its utility. If the utility of outcome $ a $ is greater than that of outcome $ b $ for the agent, then it prefers outcome $ a $ to outcome $ b $. In the game, every agent tries to get the best outcome for itself and also knows that other agents similarly try to achieve the best outcomes for themselves. In order to achieve this goal, agents follow strategies that decide their behaviours in all situations. Researchers in game theory have applied these mathematical models to understand decision making in economics~\citep{gu2005price,kelly2003decision}, biology~\citep{hammerstein1994game,dugatkin2000game} and multi-agent systems~\citep{parsons2002game,semsar2009multi}. Furthermore, RAFC can be modeled as a game, where fog users are players of the game, and they act to compete for fog resources (see the details in Section \ref{model of fog}).
+In game theory, a simultaneous game (e.g., rock-paper-scissors) is a game where each agent chooses its actions without any knowledge of the actions of other agents. Our RAFC problem belongs to this type of game because fog users are assumed to not have any information of other users' actions, although they do not take actions at the same time. First of all, we present a rigorous mathematical definition of a simultaneous game, so that we can introduce other concepts based on it.
+Formally, we define a simultaneous game as consisting of a finite set $I$ of agents, $I = \{1,2,...,n \}$. The relevent traits of agent $ i $ (e.g., preferences and time constraints ) are summarised as the type $ \theta_i \in \Theta_{i} $ of that agent, and the type profile $ \theta = \{ \theta_1, \theta_2, \ldots, \theta_n\} $ is the set of all agents' types. The behaviour of agent $ i $ is captured by a function that maps from all its possible types to its set of actions: $\Theta_i \rightarrow X_i$, which is called the strategy of agent $ i $. $S_i$ is the set of all strategies of agent $i$. The strategy of agent $i$ and the strategies vector of other agents are $s_i$ and $s_{-i}$, respectively. Then the vector of strategies selected by all agents is $s=(s_1,s_2...,s_n)$. The set of all possible vectors of strategies is denoted as $S$, and the set of all possible vectors of strategies except agent $i$'s is $S_{-i}$. The utility of agent $i$ when it plays strategy $s_i$ and others play strategy $s_{-i}$ is $u_i(s_i,s_{-i}) \in \mathbb{R}$. 
 % the difference between utility and valuation function
 
-In addition, the strategies of agents can be categorised into pure strategies and mixed strategies. A pure strategy uniquely determines the behaviour of an agent for any situation (the state of the game) it can face, which may not be random. In other words, an agent using a pure strategy will always take the same action when it faces the same situation. On the other hand, a mixed strategy is an assignment of a probability to each pure strategy. This allows an agent to randomly choose a pure strategy when it needs to take actions. In this thesis, we focus on pure strategies because we aim to incentivise agents to use a pure strategy, which is to truthfully reveal their types.
+In addition, the strategies of agents can be categorised into pure strategies and mixed strategies. A pure strategy uniquely determines the behaviour of an agent for any situation (the state of the game) it can face. In other words, an agent using a pure strategy will always take the same action when it faces the same situation. On the other hand, a mixed strategy is an assignment of a probability to each pure strategy. This allows an agent to randomly choose a pure strategy when it needs to take actions. In this thesis, we focus on pure strategies because we aim to incentivise agents to use a pure strategy, which is to truthfully reveal their types.
 %There are many game types under different assumptions and with their own corresponding analogues in real life. For example, they can be divided into cooperative/non-cooperative games according to whether agents can cooperate through external enforcement. They can also be divided into simultaneous/sequential games according to whether agents take actions simultaneously or not. Moreover, they can be divided into perfect information/imperfect information games according to whether all the information is known by every agent. 
 
 %Then, we introduce the pure strategy game, which is a classical model in perfect information game and is what we try to design in this thesis. In a pure strategy game, every agent can only use one strategy from its strategy set. ;
 
-\subsubsection{Solution Concepts} \label{solution concepts}
+%\subsubsection{Solution Concepts} \label{solution concepts}
 
-In game theory, a solution concept describes how to predict game results, and these predictions are called solutions. In this section, we introduce two basic solution concepts needed in this thesis, which are dominant strategy equilibrium and Nash equilibrium. Here, an equilibrium means a strategy profile (i.e., a set of strategies for all players) which is stable enough to be predicted as the actual result of the game. 
+Furthermore, given a game, there are different ways to predict its result. We use solution concepts to describe how we predict game results, and these predictions are called solutions. There are two basic solution concepts needed in this thesis: dominant strategy equilibrium and Nash equilibrium. Here, an equilibrium means a strategy profile (i.e., a set of strategies for all players) which is stable enough to be predicted as the actual result of the game. 
 
 To present dominant strategy equilibrium, we first introduce dominant strategies of agents. If an agent has a unique best strategy in the game regardless of other agents' choices, then we call it a dominant strategy for that agent. Namely, $s_i^* \in S_i$ is the dominant strategy for agent $i$, if: \[u_i(s_i^*,s_{-i}) > u_i(s_i,s_{-i}),\quad  \forall s_i \neq s_i^* ,\,  s_{-i} \in S_{-i}.\]
 %Then, the dominant strategy equilibrium is the set of all dominant strategies (i.e., $s^*=(s_1^*,s_2^*,...,s_n^*)$).
@@ -474,7 +473,7 @@ Nash equilibria can exist in a stable manner because no agent in the Nash equili
 
 \subsection{Mechanism Design} \label{mechanism design}
 
-Against this background, we introduce the core concept of this thesis–mechanism design, which can be viewed as reverse game theory. For game theory, the goal is to analyse the strategies and behaviours of agents in a certain game~\citep{roger1991game}, while for mechanism design, the goal is to design the mechanism of the game to achieve a certain result or social choice (i.e., an aggregation of different types of agents toward a single collective decision) in a strategic setting~\citep{nisan2007algorithmic}. Since the types (or part of the types) of the agents are usually private (i.e., not common knowledge), mechanism design is necessary under these circumstances. In particular, the designer of the mechanism does not participate in the game. Instead, it designs the mechanism, or rules of the game, to achieve certain goals (e.g., social welfare maximisation, or revenue maximisation). Since the mechanism designer needs to make decisions based on agents' types, the difficulty of mechanism design is how to incentivise agents to reveal their true types. 
+We now introduce the core concept of this thesis–mechanism design, which can be viewed as reverse game theory. For game theory, the goal is to analyse the strategies and behaviours of agents in a certain game (as described in Section~\ref{game theory}), while for mechanism design, the goal is to design the mechanism of the game to achieve a certain result or social choice (i.e., an aggregation of different types of agents toward a single collective decision) in a strategic setting~\citep{nisan2007algorithmic}. Since the types (or part of the types) of the agents are usually private (i.e., not common knowledge), mechanism design is necessary under these circumstances. In particular, the designer of the mechanism does not participate in the game. Instead, it designs the mechanism, or rules of the game, to achieve certain goals (e.g., social welfare maximisation or revenue maximisation). Since the mechanism designer needs to make decisions based on agents' types, the difficulty of mechanism design is how to incentivise agents to reveal their true types. 
 
 In order to model strategic behaviours of the agents, a model called independent private values, and strict incomplete information game~\citep[Chapter 9]{nisan2007algorithmic} is adopted in this thesis. Independent private values mean that the valuation of an agent is not affected by any other agents' information. Here, the valuation function of an agent represents its valuation of the result it gets. Unlike the utility function, this does not include any payments (see Definition \ref{general mechanism}). 
 Strict incomplete information means that there is no probabilistic information in the model. For example, we do not know the distribution of valuation functions. This model is reasonable in our RAFC scenario, in which users are assumed to have independent valuation functions and have no knowledge about the types of others, and the mechanism designer has no probabilistic information about the agents either (Challenge \ref{itm: Challenge truthful}). Here, a game comprises a mechanism environment and a mechanism. We first introduce the mechanism environment.
@@ -490,12 +489,12 @@ Strict incomplete information means that there is no probabilistic information i
 	\end{enumerate}
 \end{definition}
 
+In the following sections, we introduce some foundamental concepts and theories in mechanism design. Specifically, we introduce the definitions of social choice function and mechanism (Section \ref{social choices and mechanisms}), and we describe a special type of mechanisms called direct-revelation mechanisms along with an important theory called the revelation principle (Section \ref{direct-revelation mechanisms and truthfulness}).
 %From the above definition, we can see that each agent needs to choose an action without knowledge of other agents' types or actions. In mechanism design, we design mechanisms (see Definition below) to make the strategies of agents desirable.
 % In particular, we wish that the game induced by the mechanism have a desired dominant strategy solution so that the strategies of agents are incentivised to that desired by us. 
 \subsubsection{Social Choices and Mechanisms} \label{social choices and mechanisms}
 
-
-Against this background, we introduce the definition of a general (nondirect-revelation) mechanism. A general mechanism is composed of three components: rules that specify possible actions, an outcome function that chooses a result based on the profile of agents' actions, and payment functions that decide a payment for every agent also based on the profile of actions.
+Building on the general definitions, we next introduce the notion of a general (nondirect-revelation) mechanism. A general mechanism is composed of two components: an outcome function that chooses a result based on the profile of agents' actions, and a payment functionthat decide a payment for every agent also based on the profile of actions.
 % We consider mechanisms with money (Challenge \ref{itm: Challenge cost-aware}) in this thesis because this is common practice in resource allocation like smart grid, cloud computing and fog computing. 
 % Formally, the set of alternative results is $A$. The preference of a agent $i$ is quantified by a valuation function $v_i : A \rightarrow \mathbb{R}$. An agent's utility $u_i$ is the difference between its value $v_i$ and payment $p_i$.
 
@@ -503,20 +502,25 @@ Against this background, we introduce the definition of a general (nondirect-rev
 	A general mechanism $ \mathcal{M} = (a, \{p_i\}_{i \in I}) $ comprises:
 	\begin{enumerate}
 		\item an outcome function $a : X_1 \times \cdots \times X_n \rightarrow A $
-		%        outcome function actions -> A, social choice function types -> A ?
-		\item payment functions $p_1,\ldots,p_n$, where $p_i : X_1 \times \cdots \times X_n \rightarrow \mathbb{R}$
-		\citep[Definition 9.24]{nisan2007algorithmic}.
-	\end{enumerate}
-\end{definition}
+          %        outcome function actions -> A, social choice function types -> A ?
+          \item payment functions $p_1,\ldots,p_n$, where $p_i : X_1 \times \cdots \times X_n \rightarrow \mathbb{R}$
+          \citep[Definition 9.24]{nisan2007algorithmic}.
+      \end{enumerate}
+  \end{definition}
 
-Then, the game induced by a mechanism over some mechanism environment is formally defined below.
-\begin{definition}[games of mechanisms]
-	The game $ \Gamma(\mathcal{M}) $ induced by a mechanism $ \mathcal{M} = (a, \{p_i\}_{i \in I}) $ over mechanism environment $ \mathcal{E} = (I, A, \{X_i\}_{i \in I}, \{\Theta_{i}\}_{i \in I}, \{v_i\}_{i \in I}) $ is the strict incomplete information game $ \Gamma(\mathcal{M}) = (I, \{\Theta_{i}\}_{i \in I}, \{X_i\}_{i \in I}, \{u_i\}_{i \in I}) $ where
-	agents' utility functions $u_i(\theta_i,x_1,\ldots,x_n) = v_i(\theta_i,a(x_1,\ldots,x_n)) - p_i(x_1,\ldots,x_n)$
+  Then, the game induced by a mechanism over some mechanism environment is formally defined below.
+  \begin{definition}[games of mechanisms]
+      The game $ \Gamma(\mathcal{M}) $ induced by a mechanism $ \mathcal{M} = (a, \{p_i\}_{i \in I}) $ over mechanism environment $ \mathcal{E} = (I, A, \{X_i\}_{i \in I}, \{\Theta_{i}\}_{i \in I}, \{v_i\}_{i \in I}) $ is the strict incomplete information game $ \Gamma(\mathcal{M}) = (I, \{\Theta_{i}\}_{i \in I}, \{X_i\}_{i \in I}, \{u_i\}_{i \in I}) $ where the agents' utility functions $u_i(\theta_i,x_1,\ldots,x_n) = v_i(\theta_i,a(x_1,\ldots,x_n)) - p_i(x_1,\ldots,x_n)$
 	\citep[Definition 9.24]{nisan2007algorithmic}.
 \end{definition}
 
-In general, we want to design a mechanism that can get the same result of a desired social choice function. So if the equilibrium under a mechanism maps to the same result as a social choice function, we say that this mechanism implements the social choice function.
+\begin{definition}[social choice function]
+  The social choice function $f$ maps the types of agents to the results (allocation of goods):
+	$$f : \Theta_1 \times \cdots \times \Theta_n \rightarrow A$$ 
+  \label{social choice function}
+\end{definition}
+
+In general, we want to design a mechanism that can get the same outcome of a desired social choice function (e.g., a social choice function that maximise the total utilities of the agents). So if the equilibrium under a mechanism maps to the same result as a social choice function, we say that this mechanism implements this social choice function.
 
 \begin{definition}[implementation]
 	The mechanism implements a social choice function $f : \Theta_1 \times \cdots \times \Theta_n \rightarrow A$ in dominant strategies if for some dominant strategy equilibrium $s_1,\ldots,s_n$ of the induced game, where $s_i: \Theta_i \rightarrow X_i$ we have that
@@ -524,20 +528,20 @@ In general, we want to design a mechanism that can get the same result of a desi
 	\citep[Definition 9.24]{nisan2007algorithmic}.
 \end{definition}
 
+In the following section, we introduce a special type of mechanism called direct-revelation mechanisms and a property of mechanisms called truthfulness. Then we introduce the revelation principle, which shows that we can just focus on direct-revelation truthful mechanisms when designing mechanisms.
+
 \subsubsection{Direct-Revelation Mechanisms and Truthfulness} \label{direct-revelation mechanisms and truthfulness}
-In particular, there is a special type of mechanism called direct-revelation mechanism, which is very important in mechanism design because of the revelation principle (see Proposition \ref{revelation principle}). In a direct-revelation mechanism, the set of actions of agent $i$, $X_i$, is just the set of its possible types $ \Theta_i $, which means what an agent can do is just to reveal its type to the mechanism.  To formally introduce this definition below, we first introduce some notations. We denote the set of all possible valuation functions for agent $i$ as $V_i$, and the vector of all types except agent $i$'s as $\theta_{-i} = (\theta_1,\ldots,\theta_{i-1},\theta_{i+1},\ldots,\theta_n)$. Similarly, we define $\Theta_{-i} = \Theta_1 \times \cdots \times \Theta_{i-1} \times \Theta_{i+1} \times \cdots \times \Theta_n$.
+There is a special type of mechanism called a direct-revelation mechanism, which is very important in mechanism design because of the revelation principle (see Proposition \ref{revelation principle}). In a direct-revelation mechanism, the set of actions of agent $i$, $X_i$, is the set of its possible types $ \Theta_i $, which means what an agent can do is just to reveal its type to the mechanism.  To formally introduce this definition below, we first introduce some notation. We denote the set of all possible valuation functions for agent $i$ as $V_i$, and the vector of all types except agent $i$'s as $\theta_{-i} = (\theta_1,\ldots,\theta_{i-1},\theta_{i+1},\ldots,\theta_n)$. Similarly, we define $\Theta_{-i} = \Theta_1 \times \cdots \times \Theta_{i-1} \times \Theta_{i+1} \times \cdots \times \Theta_n$.
 %Similarly, $V = V_1 \times \cdots \times V_n$ and $V_{-i} = V_1 \times \cdots \times V_{i-1} \times V_{i+1} \times \cdots \times V_n$. 
 
 \begin{definition} [direct-revelation mechanisms]
-	A direct-revelation mechanism $(f,p_1,...,p_n)$ is composed of a social choice function $f$ and a vector of payment functions $(p_1,...,p_n)$.
-	The social choice function maps the reported types of agents to the results (allocation of goods)
-	$$f : \Theta_1 \times \cdots \times \Theta_n \rightarrow A$$ 
+	A direct-revelation mechanism $(f,p_1,...,p_n)$ is composed of a social choice function $f$ and a vector of payment function $(p_1,...,p_n)$.
 	The payment functions $(p_1,...,p_n)$ maps the reported types of agents to the payments of agents, where
 	$$p_i : \Theta_1 \times \cdots \times \Theta_n \rightarrow \mathbb{R}$$
 	\citep[Definition 9.14]{nisan2007algorithmic}.
 \end{definition}
 
-Then we introduce the definition of truthfulness, which is a key concept in this thesis. It is also called strategy-proofness or dominant-strategy incentive-compatibility (DSIC). Under a truthful mechanism, agent $i$ would prefer providing its true type to the mechanism regardless of other agents' strategies, because by providing false information agent $i$ cannot increase its utility. In other words, truthful mechanisms can prevent agents from misreporting and manipulating.
+Now we introduce the definition of truthfulness, which is a key concept in this thesis. It is also called strategy-proofness or dominant-strategy incentive-compatibility (DSIC). Under a truthful mechanism, agent $i$ would prefer providing its true type to the mechanism regardless of other agents' strategies, because by providing false information agent $i$ cannot increase its utility. In other words, truthful mechanisms can prevent agents from misreporting and manipulating.
 
 \begin{definition}[truthfulness]
 	A mechanism $(f,p_1,...,p_n)$ is called truthful or DSIC  if $v_i(f(\theta_i, \theta_{-i})) - p_i(\theta_i, \theta_{-i}) \geq v_i(f(\theta_i', \theta_{-i})) - p_i(\theta_i',  \theta_{-i}), \quad \forall \theta_i , \theta_i' \in \Theta_i ,\, \theta_{-i} \in \Theta_{-i} $~\citep[Definition 9.15]{nisan2007algorithmic}.
@@ -550,7 +554,7 @@ Then we introduce the definition of truthfulness, which is a key concept in this
 %    A function $f: \Theta_1 \times \cdots \times \Theta_n \rightarrow A$ is called a \textit{social choice function}.
 %    \citep[Definition 9.1]{nisan2007algorithmic}.
 %\end{definition}
-Now we are ready to introduce a fundamental principle in mechanism design called the revelation principle. It is fundamental because this principle shows that it is enough to just study direct-revelation truthful mechanisms to find out if it is possible to implement social choice function $f$ in dominant strategies. This principle makes mechanism design much easier by narrowing the space of mechanisms that need to be searched. 
+We can now introduce a fundamental principle in mechanism design called the revelation principle. It is fundamental because this principle shows that it is sufficient to just study direct-revelation truthful mechanisms to find out if it is possible to implement social choice function $f$ in dominant strategies. This principle makes mechanism design much easier by narrowing the space of mechanisms that need to be searched. 
 
 \begin{proposition}(Revelation principle) \label{revelation principle}
 	Any social choice functions $f$ that can be implemented in dominant strategies by a general mechanism can also be implemented by a direct-revelation truthful mechanism. Moreover, the payments of the agents in the truthful mechanism are the same as those in the equilibrium of the original mechanism~\citep[Proposition 9.25]{nisan2007algorithmic}.
@@ -559,7 +563,7 @@ Now we are ready to introduce a fundamental principle in mechanism design called
 
 %While indirect-revelation mechanisms are all the types of mechanisms except for direct-revelation mechanisms. 
 
-In the following, we introduce two desired properties of a mechanism besides truthfulness in this thesis. The first desired property is called individual rationality (IR), which guarantees that all (rational) agents are willing to participate. This is required because agents in our RAFC problem cannot be forced to participate in the mechanism. To satisfy this property, the mechanism should guarantee that any agents will not get negative utility by joining the game. 
+In the following, we introduce two desirable properties of a mechanism besides truthfulness in this thesis. The first desirable property is called individual rationality (IR), which guarantees that all (rational) agents are willing to participate. This is required because agents in our RAFC problem cannot be forced to participate in the mechanism. To satisfy this property, the mechanism should guarantee that no agents will get negative utility by joining the game. 
 \begin{definition} [IR]
 	A mechanism is individually rational if no agent gets negative utility by participating the game (i.e., $v_i(f(\theta_1,...,\theta_n)) - p_i(\theta_1,...,\theta_n) \geq 0, \quad \forall \theta_1 ,\ldots,\theta_n \in \Theta_n, \, i \in I$)~\citep[Definition 9.18]{nisan2007algorithmic}
 \end{definition}
@@ -590,69 +594,42 @@ Then, the following definition describes the property a social choice function m
 	A social choice function $f$ satisfies Weak Monotonicity if $ f(\theta_i, \theta_{-i}) = a \neq b = f(\theta_i', \theta_{-i}) \implies v_i(a) - v_i(b) \geq v_i'(a) - v_i'(b) \quad \forall i \in I, \;  \theta_i,\theta_{i}' \in \Theta_i, \; \theta_{-i} \in \Theta_{-i} $~\citep[Definition 9.28]{nisan2007algorithmic}.
 \end{definition}
 
-Then, the following theorem means that WMON is a necessary condition for truthfulness but becomes a sufficient condition only all domains of types are convex sets. More specifically, a convex set is a set of points, for every pair of points within it, every point on the straight line that joins them also lies within the set.
+Then, the following theorem means that WMON is a necessary condition for truthfulness but becomes a sufficient condition only if all domains of types are convex sets. More specifically, a convex set is a set of points, for every pair of points within it, every point on the straight line that joins them also lies within the set.
 
 \begin{theorem}
 	If a mechanism $(f,p_1,...,p_n)$ is truthful, $f$ satisfies Weak Monotonicity (WMON). In addition, for every WMON $f$ there exists payment function $p_1,...,p_n$ such that the mechanism $(f,p_1,...,p_n)$ is truthful only if all domains of types $\Theta_i$ are convex sets~\citep[Theorem 9.29]{nisan2007algorithmic}.
 \end{theorem}
 
-\subsubsection{VCG Mechanisms} \label{VCG machanisms}
-
-In this section, we will introduce one famous type of truthful mechanisms, which are called Vickrey-Clarke-Groves (VCG) Mechanisms. In particular. some literature we review below is based on this type of mechanism. Even though they often face computational issues (i.e., they are difficult to calculate) in practice, they can achieve optimal social welfare and truthfulness at the same time. 
-
-\begin{definition}
-	A mechanism $(f,p_1,...,p_n)$ is called a Vickrey-Clarke-Groves (VCG) Mechanism if 
-	\begin{itemize}
-		\item $f(v_1,...,v_n) \in argmax_{a \in A}\sum_iv_i(a)$; namely, the social choice function maximises the social welfare
-		\item The payment function of agent $i$ is $p_i(v_1,...,v_n) = h_i(v_{-i}) - \sum_{j \neq i}v_j(f(v_1,...,v_n))$, where $h_i$ is some function that does not depend on $v_i$~\citep[Definition 9.16]{nisan2007algorithmic}.
-	\end{itemize}
-\end{definition}
-
-In a VCG mechanism, an agent's utility is the difference between the total social welfare and a value from a function $h_i$, which is independent of $v_i$. Thus, each agent has an incentive to report its true type to help maximise the social welfare because maximising the social welfare also maximises its utility.
-
-\begin{theorem}[Vickrey-Clarke-Groves]
-	Every VCG mechanism is truthful~\citep[Theorem 9.17]{nisan2007algorithmic}.
-\end{theorem}
-
-%The $h_i$ in a VCG mechanism can be any function which is independent of $v_i$. In the following we introduce a special $h_i$ with two desired properties. That is, every agent will not have a negative utility (individually rationality) and that every agent pays positive money to the mechanism. 
-%
-%\begin{definition}(Clarke pivot rule)
-%    Clarke pivot rule payment: $h_i(v_{-i}) = max_{b \in A}\sum_{j \neq i}v_i(b)$~\citep[Definition 9.19]{nisan2007algorithmic}. 
-%\end{definition}
-%
-%The Clarke pivot rule payment is the maximum social welfare if agent $i$ did not join the game. Hence the payment of agent $i$ is the difference between the social welfare of others when agent $i$ joins the game or not (i.e., the externality of agent $i$). This payment has the following useful properties. 
-%
-%\begin{lemma}
-%    A VCG mechanism with Clarke pivot payments makes no positive transfers. Moreover, it is individually rational if $v_i(a) \geq 0, \quad \forall v_i \in V_i, \; \forall a \in A$~\citep[Lemma 9.20]{nisan2007algorithmic}.
-%\end{lemma}
-
-In order to use a VCG mechanism, we need to calculate the optimal social welfare based on the reported agents' types. However, this is usually computationally hard. Furthermore, in most cases, it is impossible to make resource allocation decisions that maximise the total social welfare in online settings because the mechanism does not know the future. So normally, applying VCG mechanisms in online settings is impossible, unless allocation decisions can be made optimal. Thus, it is not feasible to apply VCG mechanisms to our RAFC problem.
 
 \subsection{Online Mechanism Design} \label{online mechanism design}
 
-In this chapter, we will extend the framework of classic mechanism design to online mechanism design, which deals with time-dynamic scenarios where agents' types are reported over time and decisions must be made without future information. So unlike an offline mechanism, which just makes one overall decision, an online mechanism must make a sequence of decisions over time. 
+In this section, we extend the framework of classic mechanism design to online mechanism design, which deals with time-dynamic scenarios where agents' types are reported over time and decisions must be made without future information. So unlike an offline mechanism, which just makes one overall decision, an online mechanism must make a sequence of decisions over time. 
 %Furthermore, besides agents' reports, stochastic events could also happen over time, and we use $ \omega \in \Omega $ to denote the set of possible stochastic events. 
-Many real-world scenarios are dynamic, such as allocating computational resources to tasks being submitted over time (e.g., the RAFC problem we study in this thesis), allocating electrical power to electric cars arriving over time or selling seats on an aeroplane to passengers. 
+Many real-world scenarios are dynamic, such as allocating computational resources to tasks being submitted over time, allocating electrical power to electric cars arriving over time or selling seats on an aeroplane to passengers. 
+The RAFC problem we study in this thesis is also dynamic because fog users report their tasks over time and allocation decisions must be made at the same time of reports.
 
 Online mechanism design faces challenges that are different from (offline) mechanism design because the environment is dynamic~\citep[Chapter 16]{nisan2007algorithmic}. In particular:
 \begin{enumerate}
 	\item Decisions must be made without future information.
 	\item Other than their valuation functions, agents can also misreport their private information about time, such as the arrival times and deadlines of their tasks (Challenge \ref{itm: Challenge time-oriented})
-	\item (limited misreports) In practice, agents may not be able to misreport arbitrarily. For example, in the RAFC scenario, it is impossible to report a task before the agent knows it needs to run this task. So an agent can only misreport a later arrival time of its task.
+	\item (limited misreports) In practice, an agent may not be able to misreport their type without limitations. For example, in the RAFC scenario, it is impossible to report a task before the agent knows it needs to run this task. So an agent can only misreport a later arrival time of its task.
 \end{enumerate}
 
-Next, we discuss the component of a dynamic environment in this thesis. $T = \{ 1,2,\ldots,t \}$ denotes discrete (possibly infinite) time steps. Let $q = (q^1,q^2,\ldots)$ denote the sequence of decisions (e.g., accepting/rejecting an agent, the payment of an agent, and when to serve an agent) which can be made when receiving reports from agents. The type of agent $ i $, $\theta_i = (T_i^a,T_i^d,v_i) \in \Theta$, where $T_i^a,T_i^d \in T$ are its arrival time and departure time (deadline), and $ v_i(k) \in \mathbb{R} $ is its valuation function. On the other hand, the reported type of agent $ i $ is denoted as $\hat{\theta}_i = (\hat{T}_i^a,\hat{T}_i^d,\hat{v}_i) \in \Theta$, which may be different from $ \theta_{i} $ because agents can misreport in our settings. The mechanism state $h^t = (\theta^1,\ldots, \theta^t; q^1,\ldots,q^{t-1}) \in H^t$ denotes the mechanism state in time step $ t $, where $ H^t $ is the set of possible mechanism states in time step $ t $. It contains the information of agent types ($\theta^1,\ldots, \theta^t$), and decisions ($q^1,\ldots,q^{t-1}$) that have been made. Furthermore, we use $ Q(h^t) $ to denote all possible decisions in state $ h^t $. ~\citep[Section 16.2]{nisan2007algorithmic}
+Next, we discuss the component of a dynamic environment in this thesis. $T = \{ 1,2,\ldots,t \}$ denotes discrete (possibly infinite) time steps. Let $q = (q^1,q^2,\ldots)$ denote the sequence of decisions (e.g., accepting/rejecting an agent, the payment of an agent, and when to serve an agent) which can be made when receiving reports from agents. The type of agent $ i $, $\theta_i = (T_i^a,T_i^d,v_i) \in \Theta$, where $T_i^a,T_i^d \in T$ are its arrival time and departure time (deadline), and $ v_i(k) \in \mathbb{R} $ is its valuation function. On the other hand, the reported type of agent $ i $ is denoted as $\hat{\theta}_i = (\hat{T}_i^a,\hat{T}_i^d,\hat{v}_i) \in \Theta$, which may be different from $ \theta_{i} $ because agents can misreport in our setting. The mechanism state $h^t = (\theta^1,\ldots, \theta^t; q^1,\ldots,q^{t-1}) \in H^t$ denotes the mechanism state in time step $ t $, where $ H^t $ is the set of possible mechanism states in time step $ t $. It contains the information of agent types ($\theta^1,\ldots, \theta^t$), and decisions ($q^1,\ldots,q^{t-1}$) that have been made. Furthermore, we use $ Q(h^t) $ to denote all possible decisions in state $ h^t $. ~\citep[Section 16.2]{nisan2007algorithmic}
+
+In the following section, we extend the direct-revelation mechanisms and revelation principle to the online domain. Furthermore, we give formal definition of limited misreports and the definition of truthfulness under limited misreports. 
+
 \subsubsection{Direct-Revelation Online Mechanisms} \label{direct-revelation online mechanisms}
 
 
-Now we are ready to introduce the definition of a direct-revelation online mechanism. A direct-revelation online mechanism is an extension of a direct-revelation offline mechanism, but it has more restrictions on agents' behaviours. Note that the mechanism we design for RAFC in Section~\ref{FlexOG} belongs to this type of mechanism.
+Now we are ready to introduce the definition of a direct-revelation online mechanism. A direct-revelation online mechanism is an extension of a direct-revelation offline mechanism, but it has more restrictions on agents' behaviours. Note that the mechanism we design for RAFC in Section~\ref{FlexOG} belongs to this type of mechanism because the only actions fog users can take are to report their types and they report over time. 
 
 \begin{definition}[direct-revelation online mechanism]
-	In a direct-revelation online mechanism, each agent only sends a single report about its type to the mechanism. The mechanism is comprised of a social choice policy $f =\{f^t\}^{t\in T}$ and a payment policy $p = \{p^t\}^{t\in T}$, where decision $ f^t(h^t) \in Q(h^t) $ is made in mechanism state $ h^t $ and payment $ p_i^t(h^t) $ is the money that agent $ i $ needs to pay to the mechanism. For convenience, we denote the sequence of decisions as $f(\theta) = (q^1,q^2,\ldots)$ and overall payment collected from agent $i$ as $p_i(\theta) \in \mathbb{R}$, given type profile $ \theta $. ~\citep[Definition 16.2]{nisan2007algorithmic}.
+	In a direct-revelation online mechanism, each agent only sends a single report about its type to the mechanism. The mechanism consists a social choice policy $f =\{f^t\}^{t\in T}$ and a payment policy $p = \{p^t\}^{t\in T}$, where decision $ f^t(h^t) \in Q(h^t) $ is made in mechanism state $ h^t $ and payment $ p_i^t(h^t) $ is the money that agent $ i $ needs to pay to the mechanism. For convenience, we denote the sequence of decisions as $f(\theta) = (q^1,q^2,\ldots)$ and overall payment collected from agent $i$ as $p_i(\theta) \in \mathbb{R}$, given type profile $ \theta $~\citep[Definition 16.2]{nisan2007algorithmic}.
 \end{definition}
 
 %\subsubsection{Limited Misreports} \label{limited misreports}
-In particular, unlike offline scenarios, in certain online scenarios, it is reasonable to assume some limitations on the domain of the misreports, which can also simplify the mechanism design problem. For example, agent $ i $ cannot report an earlier arrival time than its true arrival time ($ \hat{T}_i^a < T_i^a $). This is a very natural assumption because agent $ i $ has no idea of its type before its true arrival time $ T_i^a $. 
+Unlike offline scenarios, in certain online scenarios, it is reasonable to assume some limitations on the domain of the misreports, which can also simplify the mechanism design problem. For example, agent $ i $ cannot report an earlier arrival time than its true arrival time ($ \hat{T}_i^a < T_i^a $) or report a later deadline ($ \hat{T}_i^d > T_i^d$). This is a very natural assumption because agent $ i $ has no idea of its type before its true arrival time $ T_i^a $, and reporting a later deadline will make the task miss its deadline. 
 
 \begin{definition}[limited misreports]
 	The limited misreports that an agent can make is denoted as $C(\theta_i) \subseteq \Theta_i$, where $\theta_i$ is the type of agent $i$~\citep[Definition 16.4]{nisan2007algorithmic}.
@@ -680,82 +657,11 @@ Then, we introduce the definition of a truthful online mechanism given limited m
 % \end{definition}
 
 %% need to make this principle clear
-Unfortunately, unlike (offline) mechanism design, only studying direct-revelation truthful online mechanism is not without loss of generality because the online revelation principle does not always hold. However, if the agents are assumed to have no-early arrivals ($ \hat{T}_i^a \geq T_i^a $) and no-late departures ($ \hat{T}_i^d \leq T_i^d $), then the online revelation principle still holds. Alternatively, we could demand each agent to send a non-informative ``heartbeat'' message in every time step $ t \in [\hat{T}_i^a, \hat{T}_i^d ] $ besides the report of its type, which is reasonable in our RAFC model. So we focus on truthful direct-revelation online mechanisms in our work. 
+Unfortunately, unlike (offline) mechanism design, only studying direct-revelation truthful online mechanism is not without loss of generality because the online revelation principle does not always hold. However, if the agents are assumed to have no-early arrivals ($ \hat{T}_i^a \geq T_i^a $) and no-late departures ($ \hat{T}_i^d \leq T_i^d $), then the online revelation principle still holds. Alternatively, revelation principle can be recovered by demanding each agent to send a non-informative ``heartbeat'' message in every time step $ t \in [\hat{T}_i^a, \hat{T}_i^d ] $ besides the report of its type~\citep[Section 16.22]{nisan2007algorithmic}. In our RAFC model, although fog users can report late departures, it is reasonable to ask them to send a ``heartbeat'' message in every time step. So we focus on truthful direct-revelation online mechanisms in our work. 
 
-%Next, we state the online revelation principle, which is a variation of the revelation principle. Similarly, it means that we only need to focus on direct-revelation and truthful mechanism in online mechanism design.
+In the following sections, we examine related work on MARA (Section \ref{general-multiagent-resource-allocation}), RACC (Section \ref{resource-allocation-in-cloud-computing}), and RAFC (Section \ref{resource-allocation-in-fog-computing}). Specifically, RAFC is the domain we study in this thesis, RACC is a close domain with many similarities, and MARA is the big domain that RAFC and RACC belongs to. We analyse the different resource allocation models they deal with, the techniques they use, and why their approach cannot directly apply to our RAFC problem.
 
-\begin{proposition}[online revelation principle]
-	Any social choice functions $f$ that can be implemented online in dominant strategies by a mechanism can also be implemented by a direct-revelation truthful mechanism~\citep[Theorem 1]{friedman2003pricing}.
-\end{proposition}
-
-% Can add about online VCG mechanism here, Theorem 2 from friedman2003pricing.
-\subsubsection{Single-Valued Online Domains} \label{single-valued online domains}
-
-In what follows, we will discuss truthfulness for a simple (yet inclusive) family of online domains called single-valued preference domains because a lot of work of online resource allocation we reviewed below actually falls in this domain. In these domains, an agent has the same value $r_i$ for any of a set of interesting decisions (i.e., decisions that give positive value to the agent) made by the mechanism during the desirable period $t \in [T_i^a, T_i^d]$ and has value for at most one such decision. Here, the set of interesting decisions is assumed to be common knowledge for simplicity. For example, fog user $ i $ is only interested in processing a specific task. It is either fully satisfied (gets value $r_i$) if the task is finished, or totally unsatisfied (gets no value) otherwise. To formally introduce this definition, let $\mathcal{Y}_i = \{ Y_1,\ldots,Y_m\}$ denotes the set of interesting decisions for agent $i$, where $Y \subseteq Q = \bigcup_h Q(h), \forall Y \in \mathcal{Y}_i$, and $\succeq_Y$ is a partial order on set $\mathcal{Y}_i$.
-
-\begin{definition}[single-valued online domain]
-	A single-valued online domain is one where each agent $i$ has a type $\theta_i = (T_i^a,T_i^d,(r_i, Y_i))$ with interesting set $Y_i \in \mathcal{Y}_i$ and reward $r_i \in \mathbb{R}$, and the valuation function of agent $i$:
-	$$ v_i(\theta_i,k) =
-	\begin{cases}
-	r_i,& \text{if} \; q^t \in \bigcup_{Y:Y \succeq_Y Y_i, Y \in \mathcal{Y}_i} I \;\text{for some}\; t \in [T_i^a, T_i^d]\\
-	0, & \text{otherwise},
-	\end{cases}
-	$$
-	\citep[Definition 16.8]{nisan2007algorithmic}.
-\end{definition}
-
-Next, we introduce two important concepts (critical value and monotonic deterministic policy) in designing truthful online mechanisms with deterministic policies in single-valued preference domains. To introduce these concepts, we use $f_i(\theta_i, \theta_{-i}) \in \{ 0, 1 \}$ to denote whether policy $f$ makes an interesting decision for type $\theta_i$ agent $i$ in the time step $t \in [T_i^a, T_i^d]$, when $\theta_{-i}$ is fixed. Then, the valuation of agent $ i $ can be simply expressed by 
-\[v_i(\theta_i,k) = f_i(\theta_i, \theta_{-i})\cdot r_i \]
-Furthermore, to have an ordering upon reported types of each agent, we define partial order $\preceq_{\theta} $ on types:
-$$\theta_1 \preceq_{\theta} \theta_2 \equiv (T_1^a \geq T_2^a) \wedge (T_1^d \leq T_2^d) \wedge (r_1 \leq r_2) \wedge (Y_1 = Y_2) $$
-The reason why we do not need to consider the misreports of interesting set $ Y_i $ is because the set of interesting decisions $\mathcal{Y}_i$ for agent $i$ is assumed to be common knowledge. From this definition, we can see that $ \theta_1 \preceq_{\theta} \theta_2 $ if and only if $  \theta_2  $ has the same or a higher value ($ r_2 \geq r_1 $) for interesting decisions and the same or a looser time interval ($ (T_2^a \leq T_1^a) \wedge (T_2^d \geq T_1^d) $) than $ \theta_1 $.  
-%It is in line with reality to assume that the set of interesting decisions $\mathcal{Y}_i$ for agent $i$ is common knowledge, and there is no misreport of it. So we only need to consider the situation where $(Y_1 = Y_2)$.
-The definition below defines critical value, which is the lowest value that the agent can report and still get an interesting decision, keeping everything else unchanged. 
-\begin{definition}[critical value]
-	In a single-valued domain with deterministic policy $f$, the critical-value for agent $i$ with type $\theta_i = (T_i^a,T_i^d,(r_i,Y_i))$ is
-	\[ v_{(T_i^a,T_i^d,Y_i)}^c(\theta_{-i}) =
-	\begin{cases}
-	\text{min} \; r_i' \; s.t. \; f_i(\theta_i',\theta_{-i}) = 1 & \text{for} \; \theta_i' = (T_i^a,T_i^d,(r_i',Y_i)) \\
-	\infty, & \text{if no such} \; r_i' \; \text{exists},
-	\end{cases}
-	\]
-	where types of other agents $\theta_{-i}$ are fixed. 
-	\citep[Definition 16.10]{nisan2007algorithmic}.
-\end{definition}
-
-The above definition shows that the critical value of agent $ i $ is independent of its reported value $ r_i $ as well as the types of agents who arrive after its deadline $ T_i^d $. This is why critical value plays a major role in designing truthful online mechanisms. The second concept is monotonic policy. If such a policy $f$ makes an interesting decision for agent $i$ with type $\theta_i$, it will also make an interesting decision for agent $i$ with a ``better'' type $ \theta_i'  $ such that $\theta_i' \succ_{\theta} \theta_i$. That is if it reports an earlier arrival time or a later deadline, coupled with a higher value.
-
-\begin{definition} [monotonic]
-	A monotonic deterministic policy $f$ satisfies:
-	\[ (f_i(\theta_i, \theta_{-i}) = 1) \land (r_i > v_{(T_i^a,T_i^d,Y_i)}^c(\theta_{-i})) \Rightarrow (f_i(\theta_i', \theta_{-i}) = 1) \]
-	\[ \forall \theta_i' \succ_{\theta} \theta_i, \;  \theta_{-i} \in \Theta_{-i} \subseteq \Theta_{i} \ \]
-	\citep[Definition 16.11]{nisan2007algorithmic}.
-\end{definition}
-
-%% may need to explain why r_i > critical value is here. to prevent weak indifference
-%
-%First, the following theorem shows that a monotonic deterministic decision policy can always be truthfully implemented.
-%\begin{theorem} [sufficient condition]
-%    Under no early-arrival and no late-departure misreports and in a domain with known interesting set single-valued preferences, a monotonic, deterministic decision policy $f$ can be truthfully implemented, that is, there exists a payment policy $p$ such that the mechanism ($ f, p$) is truthful.~\citep[Theorem 16.13]{nisan2007algorithmic}. 
-%\end{theorem}
-%
-%Now, we identify necessary conditions for truthfulness and IR below. We want the truthful mechanisms to satisfy IR because normally agents cannot be forced to participate. 
-%
-%\begin{lemma}[critical payment]
-%    In a (known interesting set) single-valued preference domain, any truthful online mechanism which uses a deterministic decision policy and satisfies individual rationality must collect the critical value from every agent who gets interesting decisions.
-%    \citep[Lemma 16.14]{nisan2007algorithmic}. 
-%\end{lemma}
-%
-%Finally, under the natural assumption that the mechanism does not pay agents who do not get any interesting decisions anything, the monotonic property becomes a necessary condition for a deterministic policy to be truthfully implementable.
-%
-%\begin{theorem}[necessary condition]
-%    In a (known interesting set) single-valued preference domain with reasonable misreports, any deterministic policy $f$ that can be truthfully implemented in an individually rational mechanism which pays agents who do not get any interesting decisions nothing must be monotonic. 
-%    \citep[Theorem 16.15]{nisan2007algorithmic}. 
-%\end{theorem}
-
-Then, researchers can focus on monotonic deterministic policies and critical value payment functions when they want the online mechanism to be truthful, individually rational and to pay nothing to agents who do not get any interesting decisions~\citep{nisan2007algorithmic}. Some work reviewed in this chapter takes this approach to design truthful online mechanisms. However, this approach does not directly apply to our RAFC problem, which is not in a single-valued online domain. 
-
-\section{General Multiagent Resource Allocation} \label{general multiagent resource allocation}
+\section{General Multiagent Resource Allocation} \label{general-multiagent-resource-allocation}
 In this Section, we discuss recent work on general MARA, in which resources are distributed among several agents and these agents may have an impact on the allocation results ~\citep{chevaleyre2006issues}. MARA is relevant to a wide range of applications such as resource allocation in electricity grids~\citep{gradwell2005distributed}, network routing~\citep{feldmann2003selfish}, RACC~\citep{wang2017multiagent} and RAFC~\citep{yi2015survey}, which is the problem we focus on in the thesis. 
 
 \subsection{Background} \label{multiagent resource allocation}
@@ -824,7 +730,7 @@ Most of the above literature finds truthful resource allocation mechanisms by lo
 %while PayEX has good performance when future costs are very uncertain, and supply is sufficient. 
 Although their system model is similar to ours (see Section \ref{our mechanism}) and our work is based on this class of mechanisms, they only assume homogeneous resource. Specifically, they do not consider limited bandwidth resource (Challenge \ref{itm: Challenge bandwidth}) or deal with the dynamical assembly of VMs from several different types of resource (Challenge \ref{itm: Challenge VM}). Therefore, their resource allocation framework has been adapted for our RAFC problem in this thesis.
 
-\section{Resource Allocation in Cloud Computing } \label{cloud computing resource allocation}
+\section{Resource Allocation in Cloud Computing} \label{resource-allocation-in-cloud-computing}
 % https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7582511
 In this Section, we examine work on RACC, because RACC and RAFC have many similarities. We mainly focus on the Infrastructure-as-a-Service (IaaS) clouds in this section because the service model of fog computing in this thesis is IaaS (see Section \ref{model of fog}). Here, IaaS is a service model that serve users by directly providing computer infrastructures. More specifically, cloud providers pack computational resources (e.g., CPU, RAM and storage) into VMs and provide these VMs to their users. Now, most IaaS cloud providers typically offer pre-configured VM instances of fixed types instead of dynamic VM instances with arbitrary VM configurations (Challenge \ref{itm: Challenge VM}). For example, Amazon EC2 currently offers five categories and 24 types of VMs, and each type has one or more instance sizes\footnote{https://aws.amazon.com/ec2/instance-types/}. In terms of resource allocation mechanisms, most cloud providers, such as Amazon Web Services (AWS)\footnote{https://aws.amazon.com/}, Microsoft Azure\footnote{https://azure.microsoft.com/en-gb/}, and Google Cloud\footnote{https://cloud.google.com/} provide long-term reservation plans or short-range on-demand fixed-price plans to their users. However, long-term reservation plans are obviously not suitable for users with uncertain tasks, which is common in IoT scenarios.  Although fixed-price mechanisms are easy to implement and are obviously truthful, they are not very efficient in social welfare (Challenge \ref{itm: Challenge social welfare}) or revenue mainly because fixed-price mechanisms fail to discriminate different types of tasks~\citep{al2013cloud}. For example, a high-value task would not get a high priority in a fixed-price mechanism. Furthermore, they also fail to cater to the volatility of the market, which leads to underpricing or overpricing. To improve efficiency in revenue, spot pricing is also adopted by these cloud providers such as
 Amazon EC2\footnote{https://aws.amazon.com/ec2/spot/pricing/}, Azure Low-Priority VM\footnote{https://azure.microsoft.com/en-gb/blog/low-priority-scale-sets/}, and Google Preemptible VM Instances\footnote{https://cloud.google.com/compute/docs/instances/preemptible}. With spot pricing, a cloud user bids a price for its task, the task will run when the spot price is lower than its price, and the user pays the spot price. However, this mechanism has no guarantee of SLA. Specifically, the spot price is volatile, and thus tasks can be interrupted frequently, and there is no guarantee of the finish time of the task. In addition, the spot pricing mechanism is not truthful (Challenge \ref{itm: Challenge truthful}) either~\citep{wang2012cloud}.
@@ -847,7 +753,7 @@ Additionally, preemptive scheduling with the assumption of deadline slackness (i
 However, all the above work considers the setting of cloud computing, in which a single centralised data centre provides resources, so their techniques do not deal with bandwidth resources (Challenge \ref{itm: Challenge bandwidth}) or dynamic VM allocation (Challenge \ref{itm: Challenge VM}). Furthermore, they do not consider the operational cost of cloud providers, which is also different from our setting (Challenge \ref{itm: Challenge cost-aware}). 
 %So the Challenge \ref{itm: Challenge bandwidth}-\ref{itm: Challenge time-oriented} and \ref{itm: Challenge cost-aware} are still open. 
 
-\section{Resource Allocation in Fog Computing} \label{fog computing resource allocation}
+\section{Resource Allocation in Fog Computing} \label{resource-allocation-in-fog-computing}
 Although fog computing is quite a new concept, some research has been done on resource allocation in this domain. Now, as we mentioned in Section \ref{fog paradigm}, the fog computing structure is three-tier, which consists the IoT devices, the fog, and the cloud, some work on resource allocation only considers the fog~\citep{oueis2015fog,aazam2015fog}, while others consider the fog and IoT devices~\citep{zeng2016joint} or the fog and cloud simultaneously~\citep{deng2015towards,agarwal2016efficient}.
 
 \subsection{Offline Mechanisms for RAFC}
