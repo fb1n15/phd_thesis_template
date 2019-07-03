@@ -1,0 +1,138 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+The style file: named.bst
+Database file #1: thesis.bib
+Repeated entry---line 272 of file thesis.bib
+ : @inproceedings{yi2015survey
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--string name "august" is undefined
+--line 372 of file thesis.bib
+I was expecting a `,' or a `}'---line 375 of file thesis.bib
+ :  
+ :  note = {Accessed: 2019-2-14}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 455 of file thesis.bib
+ :  
+ :  note = {Accessed: 2019-3-31}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 654 of file thesis.bib
+ : @article{mashayekhy2015ptas
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1032 of file thesis.bib
+ : @inproceedings{yi2015survey
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1212 of file thesis.bib
+ : @inproceedings{bouveret2011general
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1219 of file thesis.bib
+ : @article{herreiner2002simple
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1250 of file thesis.bib
+ : @book{rothe2015economics
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1905 of file thesis.bib
+ : @inproceedings{intharawijitr2016analysis
+ :                                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1924 of file thesis.bib
+ : @article{agarwal2016efficient
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2147 of file thesis.bib
+ : @article{hayakawa2018price
+ :                           ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2216 of file thesis.bib
+ :   author = Press 
+ :                  Release,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2263 of file thesis.bib
+ : @inproceedings{zhang2014dynamic
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2402 of file thesis.bib
+ : @article{shi2014online
+ :                       ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2663 of file thesis.bib
+ :   
+ :   year =  {2015}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2684 of file thesis.bib
+ : @article{gupta2017ifogsim
+ :                          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2699 of file thesis.bib
+ :   
+ :   howpublished = {\url{https://tools.ietf.org/html/draft-brim-lisp-analysis-00}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2784 of file thesis.bib
+ : @article{garcia2015edge
+ :                        ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2917 of file thesis.bib
+ :   
+ :   howpublished = {\url{https://www.researchgate.net/publication/320225452_Total_Consumer_Power_Consumption_Forecast}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2963 of file thesis.bib
+ : @article{shi2017online
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in hayakawa2015online
+Warning--empty institution in liu2015distributed
+Warning--there's a number but no volume in satyanarayanan2009case
+Warning--can't use both volume and number fields in zhang2015online
+You've used 157 entries,
+            2439 wiz_defined-function locations,
+            1380 strings with 35890 characters,
+and the built_in function-call counts, 72690 in all, are:
+= -- 7708
+> -- 3086
+< -- 72
++ -- 1095
+- -- 1056
+* -- 5794
+:= -- 11239
+add.period$ -- 535
+call.type$ -- 157
+change.case$ -- 1148
+chr.to.int$ -- 153
+cite$ -- 161
+duplicate$ -- 2937
+empty$ -- 5332
+format.name$ -- 1242
+if$ -- 15429
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 159
+newline$ -- 789
+num.names$ -- 471
+pop$ -- 1107
+preamble$ -- 1
+purify$ -- 1310
+quote$ -- 0
+skip$ -- 2399
+stack$ -- 0
+substring$ -- 4180
+swap$ -- 927
+text.length$ -- 72
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1232
+warning$ -- 4
+while$ -- 635
+width$ -- 165
+write$ -- 2090
+(There were 20 error messages)

@@ -1,0 +1,62 @@
+\contentsline {chapter}{Nomenclature}{vii}{dummy.2}% 
+\contentsline {chapter}{Acronyms}{xi}{dummy.5}% 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}% 
+\contentsline {section}{\numberline {1.1}Fog Computing Overview}{3}{section.9}% 
+\contentsline {section}{\numberline {1.2}Fog Computing Application Scenarios}{5}{section.17}% 
+\contentsline {section}{\numberline {1.3}Fog Computing Resource Allocation}{7}{section.18}% 
+\contentsline {section}{\numberline {1.4}Research Challenges}{8}{section.22}% 
+\contentsline {section}{\numberline {1.5}Research Contributions}{10}{section.31}% 
+\contentsline {section}{\numberline {1.6}Outline of the Report}{12}{section.36}% 
+\contentsline {chapter}{\numberline {2}Literature Review}{13}{chapter.37}% 
+\contentsline {section}{\numberline {2.1}Preliminaries}{13}{section.38}% 
+\contentsline {subsection}{\numberline {2.1.1}Game Theory}{14}{subsection.39}% 
+\contentsline {subsection}{\numberline {2.1.2}Mechanism Design}{16}{subsection.40}% 
+\contentsline {subsubsection}{\numberline {2.1.2.1}Social Choices and Mechanisms}{17}{subsubsection.47}% 
+\contentsline {subsubsection}{\numberline {2.1.2.2}Direct-Revelation Mechanisms and Truthfulness}{18}{subsubsection.53}% 
+\contentsline {subsubsection}{\numberline {2.1.2.3}VCG Mechanisms}{20}{subsubsection.64}% 
+\contentsline {subsection}{\numberline {2.1.3}Online Mechanism Design}{21}{subsection.67}% 
+\contentsline {subsubsection}{\numberline {2.1.3.1}Direct-Revelation Online Mechanisms}{22}{subsubsection.71}% 
+\contentsline {subsubsection}{\numberline {2.1.3.2}Single-Valued Online Domains}{23}{subsubsection.76}% 
+\contentsline {section}{\numberline {2.2}General Multiagent Resource Allocation}{25}{section.80}% 
+\contentsline {subsection}{\numberline {2.2.1}Background}{25}{subsection.81}% 
+\contentsline {subsection}{\numberline {2.2.2}Offline Mechanisms for General Multiagent Resource Allocation}{27}{subsection.82}% 
+\contentsline {subsection}{\numberline {2.2.3}Online Mechanisms for General Multiagent Resource Allocation}{28}{subsection.83}% 
+\contentsline {section}{\numberline {2.3}Resource Allocation in Cloud Computing }{29}{section.84}% 
+\contentsline {subsection}{\numberline {2.3.1}Offline Mechanism for RACC}{30}{subsection.92}% 
+\contentsline {subsection}{\numberline {2.3.2}Online Mechanism for RACC}{31}{subsection.93}% 
+\contentsline {section}{\numberline {2.4}Resource Allocation in Fog Computing}{32}{section.94}% 
+\contentsline {subsection}{\numberline {2.4.1}Offline Mechanisms for RAFC}{33}{subsection.95}% 
+\contentsline {subsection}{\numberline {2.4.2}Online Mechanisms for RAFC}{34}{subsection.96}% 
+\contentsline {section}{\numberline {2.5}Summary}{35}{section.97}% 
+\contentsline {chapter}{\numberline {3}Problem Model and Resource Allocation Mechanisms}{37}{chapter.98}% 
+\contentsline {section}{\numberline {3.1}Model of RAFC}{37}{section.99}% 
+\contentsline {subsection}{\numberline {3.1.1}Overview of the Model}{37}{subsection.100}% 
+\contentsline {subsection}{\numberline {3.1.2}Formal Model}{39}{subsection.103}% 
+\contentsline {section}{\numberline {3.2}Price-based Mechanisms}{43}{section.115}% 
+\contentsline {section}{\numberline {3.3}Resource Allocation Benchmark Mechanisms}{45}{section.128}% 
+\contentsline {subsection}{\numberline {3.3.1}Offline Optimal Mechanism}{46}{subsection.129}% 
+\contentsline {subsection}{\numberline {3.3.2}Online Optimal Mechanism}{46}{subsection.130}% 
+\contentsline {subsection}{\numberline {3.3.3}Online Greedy (OG) Mechanism}{47}{subsection.134}% 
+\contentsline {subsection}{\numberline {3.3.4}SWMOA2 Mechanism}{48}{subsection.139}% 
+\contentsline {section}{\numberline {3.4}Flexible Online Greedy (FlexOG) Mechanism}{48}{section.144}% 
+\contentsline {subsection}{\numberline {3.4.1}No Limited Misreport of Deadlines}{51}{subsection.149}% 
+\contentsline {section}{\numberline {3.5}Summary}{51}{section.151}% 
+\contentsline {chapter}{\numberline {4}Simulations and Results}{53}{chapter.152}% 
+\contentsline {section}{\numberline {4.1}Experimental Setup}{53}{section.153}% 
+\contentsline {section}{\numberline {4.2}Results and Analysis}{56}{section.158}% 
+\contentsline {subsection}{\numberline {4.2.1}Social Welfare of Different Resource Scarcity}{56}{subsection.159}% 
+\contentsline {subsection}{\numberline {4.2.2}Social Welfare of Different Deadline Slackness}{59}{subsection.165}% 
+\contentsline {subsection}{\numberline {4.2.3}Processing Time of Different Mechanisms}{59}{subsection.169}% 
+\contentsline {subsection}{\numberline {4.2.4}Utility of Truthful and Non-truthful Users}{63}{subsection.174}% 
+\contentsline {section}{\numberline {4.3}Summary}{64}{section.176}% 
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{67}{chapter.177}% 
+\contentsline {section}{\numberline {5.1}Research Summary}{67}{section.178}% 
+\contentsline {section}{\numberline {5.2}Research Contributions}{68}{section.179}% 
+\contentsline {subsection}{\numberline {5.2.1}Formulation of the RAFC Problem}{68}{subsection.180}% 
+\contentsline {subsection}{\numberline {5.2.2}Design of FlexOG}{68}{subsection.181}% 
+\contentsline {section}{\numberline {5.3}Empirical Evaluation of FlexOG}{69}{section.182}% 
+\contentsline {section}{\numberline {5.4}Future Work}{69}{section.183}% 
+\contentsline {subsection}{\numberline {5.4.1}Future Empirical Evaluation}{69}{subsection.184}% 
+\contentsline {subsection}{\numberline {5.4.2}Future Resource Allocation Mechanisms}{70}{subsection.185}% 
+\contentsline {chapter}{\numberline {A}Appendix}{73}{appendix.189}% 
+\contentsline {chapter}{References}{75}{dummy.190}% 
