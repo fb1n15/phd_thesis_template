@@ -13,7 +13,7 @@ Swati Agarwal, Shashank Yadav, and Arun~Kumar Yadav.
 \newblock An efficient architecture and algorithm for resource provisioning in
   fog computing.
 \newblock {\em International Journal of Information Engineering and Electronic
-  Business}, 8(1):48, 2016.
+  Business}, 8(1):48--61, 2016.
 
 \bibitem[\protect\citeauthoryear{Al-Roomi \bgroup \em et al.\egroup
   }{2013}]{al2013cloud}
@@ -51,7 +51,7 @@ Palo Alto.
 \newblock Saguna and gridraster partner to bring bigh-quality vr/ar experiences
   to mobile devices by leveraging multi-access edge computing.
 \newblock
-  \url{https://www.prnewswire.com/news-releases/saguna-and-gridraster-partner-to-bring-high-quality-vrar-experiences-to-mobile-devices-by-leveraging-multi-access-edge-computing-682157481.html},
+  \url{https://www.prnewswire.com/news-releases/saguna-and-gridraster-partner-to-bring-high-quality-vrar-experiences}\newline\url{-to-mobile-devices-by-leveraging-multi-access-edge-computing-682157481.html},
   May 2018.
 
 \bibitem[\protect\citeauthoryear{Ananthanarayanan \bgroup \em et al.\egroup
@@ -61,18 +61,11 @@ Ganesh Ananthanarayanan, Paramvir Bahl, Peter Bod{\'\i}k, Krishna Chintalapudi,
 \newblock Real-time video analytics: The killer app for edge computing.
 \newblock {\em Computer}, 50(10):58--67, 2017.
 
-\bibitem[\protect\citeauthoryear{Andersson \bgroup \em et al.\egroup
-  }{2000}]{andersson2000integer}
-Arne Andersson, Mattias Tenhunen, and Fredrik Ygge.
-\newblock Integer programming for combinatorial auction winner determination.
-\newblock In {\em Proceedings Fourth International Conference on MultiAgent
-  Systems}, pages 39--46. IEEE, 2000.
-
 \bibitem[\protect\citeauthoryear{Atlam \bgroup \em et al.\egroup
   }{2018}]{atlam2018fog}
 Hany Atlam, Robert Walters, and Gary Wills.
 \newblock Fog computing and the internet of things: a review.
-\newblock {\em Big Data and Cognitive Computing}, 2(2):10, 2018.
+\newblock {\em Big Data and Cognitive Computing}, 2(2), 2018.
 
 \bibitem[\protect\citeauthoryear{Aydin and
   {\"O}ztemel}{2000}]{aydin2000dynamic}
@@ -113,12 +106,6 @@ Dimitri~P Bertsekas.
 \newblock {\em Constrained optimization and Lagrange multiplier methods}.
 \newblock Academic press, 2014.
 
-\bibitem[\protect\citeauthoryear{Bitam \bgroup \em et al.\egroup
-  }{2018}]{bitam2018fog}
-Salim Bitam, Sherali Zeadally, and Abdelhamid Mellouk.
-\newblock Fog computing job scheduling optimization based on bees swarm.
-\newblock {\em Enterprise Information Systems}, 12(4):373--397, 2018.
-
 \bibitem[\protect\citeauthoryear{Bittencourt \bgroup \em et al.\egroup
   }{2015}]{bittencourt2015towards}
 Luiz~Fernando Bittencourt, Marcio~Moraes Lopes, Ioan Petri, and Omer~F Rana.
@@ -148,33 +135,11 @@ Alessio Botta, Walter De~Donato, Valerio Persico, and Antonio Pescap{\'e}.
 \newblock Integration of cloud computing and internet of things: a survey.
 \newblock {\em Future generation computer systems}, 56:684--700, 2016.
 
-\bibitem[\protect\citeauthoryear{Boughaci \bgroup \em et al.\egroup
-  }{2009}]{boughaci2009memetic}
-Dalila Boughaci, Bela{\"\i}d Benhamou, and Habiba Drias.
-\newblock A memetic algorithm for the optimal winner determination problem.
-\newblock {\em Soft Computing}, 13(8-9):905, 2009.
-
-\bibitem[\protect\citeauthoryear{Boughaci \bgroup \em et al.\egroup
-  }{2010}]{boughaci2010local}
-Dalila Boughaci, Bela{\"\i}d Benhamou, and Habiba Drias.
-\newblock Local search methods for the optimal winner determination problem in
-  combinatorial auctions.
-\newblock {\em Journal of Mathematical Modelling and Algorithms},
-  9(2):165--180, 2010.
-
 \bibitem[\protect\citeauthoryear{Bouveret and Lang}{2011}]{bouveret2011general}
 Sylvain Bouveret and J{\'e}r{\^o}me Lang.
 \newblock A general elicitation-free protocol for allocating indivisible goods.
 \newblock In {\em Twenty-Second International Joint Conference on Artificial
   Intelligence}, 2011.
-
-\bibitem[\protect\citeauthoryear{Boyd \bgroup \em et al.\egroup
-  }{2011}]{boyd2011distributed}
-Stephen Boyd, Neal Parikh, Eric Chu, Borja Peleato, Jonathan Eckstein, et~al.
-\newblock Distributed optimization and statistical learning via the alternating
-  direction method of multipliers.
-\newblock {\em Foundations and Trends{\textregistered} in Machine learning},
-  3(1):1--122, 2011.
 
 \bibitem[\protect\citeauthoryear{Brooks}{1999}]{brooks1999s}
 Frederick~P Brooks.
@@ -232,7 +197,7 @@ Dominique Demougin and Claude Fluet.
 
 \bibitem[\protect\citeauthoryear{Dempsey}{2016}]{dempsey2016teardown}
 Paul Dempsey.
-\newblock The teardown: Htc vive vr headset.
+\newblock The teardown: {HTC} {Vive} {VR} headset.
 \newblock {\em Engineering \& Technology}, 11(7-8):80--81, 2016.
 
 \bibitem[\protect\citeauthoryear{Deng \bgroup \em et al.\egroup
@@ -248,43 +213,6 @@ Ruilong Deng, Rongxing Lu, Chengzhe Lai, and Tom~H Luan.
 Parth~Rajesh Desai, Pooja~Nikhil Desai, Komal~Deepak Ajmera, and Khushbu Mehta.
 \newblock A review paper on oculus rift-a virtual reality headset.
 \newblock {\em arXiv preprint arXiv:1408.1173}, 2014.
-
-\bibitem[\protect\citeauthoryear{Do \bgroup \em et al.\egroup
-  }{2015}]{do2015proximal}
-Cuong~T Do, Nguyen~H Tran, Chuan Pham, Md~Golam~Rabiul Alam, Jae~Hyeok Son, and
-  Choong~Seon Hong.
-\newblock A proximal algorithm for joint resource allocation and minimizing
-  carbon footprint in geo-distributed fog computing.
-\newblock In {\em Information Networking (ICOIN), 2015 International Conference
-  on}, pages 324--329. IEEE, 2015.
-
-\bibitem[\protect\citeauthoryear{Dobzinski \bgroup \em et al.\egroup
-  }{2005}]{dobzinski2005approximation}
-Shahar Dobzinski, Noam Nisan, and Michael Schapira.
-\newblock Approximation algorithms for combinatorial auctions with
-  complement-free bidders.
-\newblock In {\em Proceedings of the thirty-seventh annual ACM symposium on
-  Theory of computing}, pages 610--618. ACM, 2005.
-
-\bibitem[\protect\citeauthoryear{Dobzinski \bgroup \em et al.\egroup
-  }{2006}]{dobzinski2006truthful}
-Shahar Dobzinski, Noam Nisan, and Michael Schapira.
-\newblock Truthful randomized mechanisms for combinatorial auctions.
-\newblock In {\em Proceedings of the thirty-eighth annual ACM symposium on
-  Theory of computing}, pages 644--652. ACM, 2006.
-
-\bibitem[\protect\citeauthoryear{Dobzinski}{2007}]{dobzinski2007two}
-Shahar Dobzinski.
-\newblock Two randomized mechanisms for combinatorial auctions.
-\newblock In {\em Approximation, Randomization, and Combinatorial Optimization.
-  Algorithms and Techniques}, pages 89--103. Springer, 2007.
-
-\bibitem[\protect\citeauthoryear{Dobzinski}{2016}]{dobzinski2016breaking}
-Shahar Dobzinski.
-\newblock Breaking the logarithmic barrier for truthful combinatorial auctions
-  with submodular bidders.
-\newblock In {\em Proceedings of the forty-eighth annual ACM symposium on
-  Theory of Computing}, pages 940--948. ACM, 2016.
 
 \bibitem[\protect\citeauthoryear{Du \bgroup \em et al.\egroup
   }{2018}]{du2018computation}
@@ -305,31 +233,12 @@ Mica~R Endsley.
 \newblock {\em Journal of Cognitive Engineering and Decision Making},
   11(3):225--238, 2017.
 
-\bibitem[\protect\citeauthoryear{Evans \bgroup \em et al.\egroup
-  }{2017}]{evans2017evaluating}
-Gabriel Evans, Jack Miller, Mariangely~Iglesias Pena, Anastacia MacAllister,
-  and Eliot Winer.
-\newblock Evaluating the microsoft hololens through an augmented reality
-  assembly application.
-\newblock In {\em Degraded Environments: Sensing, Processing, and Display
-  2017}, volume 10197, page 101970V. International Society for Optics and
-  Photonics, 2017.
-
 \bibitem[\protect\citeauthoryear{Farooq and Zhu}{2018}]{farooq2018adaptive}
 Muhammad~Junaid Farooq and Quanyan Zhu.
 \newblock Adaptive and resilient revenue maximizing dynamic resource allocation
   and pricing for cloud-enabled iot systems.
 \newblock In {\em 2018 Annual American Control Conference (ACC)}, pages
   5292--5297. IEEE, 2018.
-
-\bibitem[\protect\citeauthoryear{Feigenbaum and
-  Shenker}{2004}]{feigenbaum2004distributed}
-Joan Feigenbaum and Scott Shenker.
-\newblock Distributed algorithmic mechanism design: Recent results and future
-  directions.
-\newblock In {\em Current Trends in Theoretical Computer Science: The Challenge
-  of the New Century Vol 1: Algorithms and Complexity Vol 2: Formal Models and
-  Semantics}, pages 403--434. World Scientific, 2004.
 
 \bibitem[\protect\citeauthoryear{Feldmann \bgroup \em et al.\egroup
   }{2003}]{feldmann2003selfish}
@@ -339,31 +248,24 @@ Rainer Feldmann, Martin Gairing, Thomas L{\"u}cking, Burkhard Monien, and
 \newblock In {\em International Symposium on Mathematical Foundations of
   Computer Science}, pages 21--45. Springer, 2003.
 
-\bibitem[\protect\citeauthoryear{Fern{\'a}ndez-Caram{\'e}s \bgroup \em et
-  al.\egroup }{2018}]{fernandez2018fog}
-Tiago Fern{\'a}ndez-Caram{\'e}s, Paula Fraga-Lamas, Manuel Su{\'a}rez-Albela,
-  and Miguel Vilar-Montesinos.
-\newblock A fog computing and cloudlet based augmented reality system for the
-  industry 4.0 shipyard.
-\newblock {\em Sensors}, 18(6):1798, 2018.
-
 \bibitem[\protect\citeauthoryear{Fernando \bgroup \em et al.\egroup
   }{2013}]{fernando2013mobile}
 Niroshinie Fernando, Seng~W Loke, and Wenny Rahayu.
 \newblock Mobile cloud computing: A survey.
 \newblock {\em Future generation computer systems}, 29(1):84--106, 2013.
 
+\bibitem[\protect\citeauthoryear{Fernández-Caramés \bgroup \em et al.\egroup
+  }{2018}]{fernandez2018fog}
+Tiago~M. Fernández-Caramés, Paula Fraga-Lamas, Manuel Suárez-Albela, and
+  Miguel Vilar-Montesinos.
+\newblock A fog computing and cloudlet based augmented reality system for the
+  industry 4.0 shipyard.
+\newblock {\em Sensors}, 18(6), 2018.
+
 \bibitem[\protect\citeauthoryear{Friedlander}{1982}]{friedlander1982decentralized}
 B~Friedlander.
 \newblock A decentralized strategy for resource allocation.
 \newblock {\em IEEE Transactions on Automatic Control}, 27(1):260--265, 1982.
-
-\bibitem[\protect\citeauthoryear{Friedman and
-  Parkes}{2003}]{friedman2003pricing}
-Eric~J Friedman and David~C Parkes.
-\newblock Pricing wifi at starbucks: issues in online mechanism design.
-\newblock In {\em Proceedings of the 4th ACM conference on Electronic
-  commerce}, pages 240--241. ACM, 2003.
 
 \bibitem[\protect\citeauthoryear{Fu \bgroup \em et al.\egroup
   }{2018}]{fu2018secure}
@@ -372,6 +274,12 @@ Jun-Song Fu, Yun Liu, Han-Chieh Chao, Bharat~K Bhargava, and Zhen-Jiang Zhang.
   fog computing and cloud computing.
 \newblock {\em IEEE Transactions on Industrial Informatics}, 14(10):4519--4528,
   2018.
+
+\bibitem[\protect\citeauthoryear{Gabriel~Evans}{2017}]{evans2017evaluating}
+Mariangely Iglesias Pena Anastacia MacAllister Eliot~Winer Gabriel~Evans,
+  Jack~Miller.
+\newblock Evaluating the microsoft hololens through an augmented reality
+  assembly application, 2017.
 
 \bibitem[\protect\citeauthoryear{Garcia~Lopez \bgroup \em et al.\egroup
   }{2015}]{garcia2015edge}
@@ -392,12 +300,13 @@ Enrico~H Gerding, Valentin Robu, Sebastian Stein, David~C Parkes, Alex Rogers,
 
 \bibitem[\protect\citeauthoryear{Gerding \bgroup \em et al.\egroup
   }{2013}]{gerding2013two}
-Enrico~H Gerding, Sebastian Stein, Valentin Robu, Dengji Zhao, and Nicholas~R
+Enrico~H. Gerding, Sebastian Stein, Valentin Robu, Dengji Zhao, and Nicholas~R.
   Jennings.
 \newblock Two-sided online markets for electric vehicle charging.
-\newblock In {\em Proceedings of the 2013 international conference on
-  Autonomous agents and multi-agent systems}, pages 989--996. International
-  Foundation for Autonomous Agents and Multiagent Systems, 2013.
+\newblock In {\em Proceedings of the 2013 International Conference on
+  Autonomous Agents and Multi-agent Systems}, AAMAS '13, pages 989--996,
+  Richland, SC, 2013. International Foundation for Autonomous Agents and
+  Multiagent Systems.
 
 \bibitem[\protect\citeauthoryear{Goemans \bgroup \em et al.\egroup
   }{2005}]{goemans2005sink}
@@ -434,12 +343,6 @@ Yunan Gu, Zheng Chang, Miao Pan, Lingyang Song, and Zhu Han.
 \newblock {\em IEEE Transactions on Vehicular Technology}, 67(8):7475--7484,
   2018.
 
-\bibitem[\protect\citeauthoryear{Guo \bgroup \em et al.\egroup
-  }{2006}]{guo2006heuristics}
-Yunsong Guo, Andrew Lim, Brian Rodrigues, and Yejun Zhu.
-\newblock Heuristics for a bidding problem.
-\newblock {\em Computers \& operations research}, 33(8):2179--2188, 2006.
-
 \bibitem[\protect\citeauthoryear{Gupta \bgroup \em et al.\egroup
   }{2017a}]{gupta2017ifogsim}
 Harshit Gupta, Amir Vahid~Dastjerdi, Soumya~K Ghosh, and Rajkumar Buyya.
@@ -463,10 +366,11 @@ Peter Hammerstein and Reinhard Selten.
 
 \bibitem[\protect\citeauthoryear{Hayakawa \bgroup \em et al.\egroup
   }{2015}]{hayakawa2015online}
-Keiichiro Hayakawa, Enrico Gerding, Sebastian Stein, and Takahiro Shiga.
+Keiichiro Hayakawa, Enrico~H. Gerding, Sebastian Stein, and Takahiro Shiga.
 \newblock Online mechanisms for charging electric vehicles in settings with
   varying marginal electricity costs.
-\newblock 2015.
+\newblock In {\em Proceedings of the 24th International Conference on
+  Artificial Intelligence}, IJCAI'15, pages 2610--2616. AAAI Press, 2015.
 
 \bibitem[\protect\citeauthoryear{Hayakawa \bgroup \em et al.\egroup
   }{2018}]{hayakawa2018price}
@@ -477,6 +381,14 @@ Keiichiro Hayakawa, Enrico~H Gerding, Sebastian Stein, and Takahiro Shiga.
   Autonomous Agents and MultiAgent Systems}, pages 309--317. International
   Foundation for Autonomous Agents and Multiagent Systems, 2018.
 
+\bibitem[\protect\citeauthoryear{He and Walrand}{2005}]{he2005pricing}
+Linhai He and Jean Walrand.
+\newblock Pricing and revenue sharing strategies for internet service
+  providers.
+\newblock In {\em Proceedings IEEE 24th Annual Joint Conference of the IEEE
+  Computer and Communications Societies.}, volume~1, pages 205--216. IEEE,
+  2005.
+
 \bibitem[\protect\citeauthoryear{Herreiner and
   Puppe}{2002}]{herreiner2002simple}
 Dorothea Herreiner and Clemens Puppe.
@@ -484,37 +396,10 @@ Dorothea Herreiner and Clemens Puppe.
   goods.
 \newblock {\em Social Choice and Welfare}, 19(2):415--430, 2002.
 
-\bibitem[\protect\citeauthoryear{Hoos and Boutilier}{2000}]{hoos2000solving}
-Holger~H Hoos and Craig Boutilier.
-\newblock Solving combinatorial auctions using stochastic local search.
-\newblock In {\em AAAI/IAAI}, pages 22--29, 2000.
-
 \bibitem[\protect\citeauthoryear{Hurwicz}{1973}]{hurwicz1973design}
 Leonid Hurwicz.
 \newblock The design of mechanisms for resource allocation.
 \newblock {\em The American Economic Review}, 63(2):1--30, 1973.
-
-\bibitem[\protect\citeauthoryear{Intharawijitr \bgroup \em et al.\egroup
-  }{2016}]{intharawijitr2016analysis}
-Krittin Intharawijitr, Katsuyoshi Iida, and Hiroyuki Koga.
-\newblock Analysis of fog model considering computing and communication latency
-  in 5g cellular networks.
-\newblock In {\em 2016 IEEE International Conference on Pervasive Computing and
-  Communication Workshops (PerCom Workshops)}, pages 1--4. IEEE, 2016.
-
-\bibitem[\protect\citeauthoryear{Jain \bgroup \em et al.\egroup
-  }{2015}]{jain2015near}
-Navendu Jain, Ishai Menache, Joseph~Seffi Naor, and Jonathan Yaniv.
-\newblock Near-optimal scheduling mechanisms for deadline-sensitive jobs in
-  large computing clusters.
-\newblock {\em ACM Transactions on Parallel Computing}, 2(1):3, 2015.
-
-\bibitem[\protect\citeauthoryear{Jiao \bgroup \em et al.\egroup
-  }{2018}]{jiao2018auction}
-Yutao Jiao, Ping Wang, Dusit Niyato, and Kongrath Suankaewmanee.
-\newblock Auction mechanisms in cloud/fog computing resource allocation for
-  public blockchain networks.
-\newblock {\em arXiv preprint arXiv:1804.09961}, 2018.
 
 \bibitem[\protect\citeauthoryear{Kelly}{2003}]{kelly2003decision}
 Anthony Kelly.
@@ -535,25 +420,6 @@ Diego Kreutz, Fernando~MV Ramos, Paulo Verissimo, Christian~Esteve Rothenberg,
   Siamak Azodolmolky, and Steve Uhlig.
 \newblock Software-defined networking: A comprehensive survey.
 \newblock {\em Proceedings of the IEEE}, 103(1):14--76, 2015.
-
-\bibitem[\protect\citeauthoryear{Krysta and
-  V{\"o}cking}{2012}]{krysta2012online}
-Piotr Krysta and Berthold V{\"o}cking.
-\newblock Online mechanism design (randomized rounding on the fly).
-\newblock In {\em International Colloquium on Automata, Languages, and
-  Programming}, pages 636--647. Springer, 2012.
-
-\bibitem[\protect\citeauthoryear{Krysta}{2005}]{krysta2005greedy}
-Piotr Krysta.
-\newblock Greedy approximation via duality for packing, combinatorial auctions
-  and routing.
-\newblock In {\em International Symposium on Mathematical Foundations of
-  Computer Science}, pages 615--627. Springer, 2005.
-
-\bibitem[\protect\citeauthoryear{Kuster}{2012}]{kuster2012cloud}
-Beat Kuster.
-\newblock Cloud computing services (ccs): A threat for internet neutrality?
-\newblock {\em Internet Economics VI}, page 117, 2012.
 
 \bibitem[\protect\citeauthoryear{Lin \bgroup \em et al.\egroup
   }{2010}]{lin2010dynamic}
@@ -605,14 +471,6 @@ Bernard Marr.
   2018.
 \newblock Accessed: 201-03-30.
 
-\bibitem[\protect\citeauthoryear{Mashayekhy \bgroup \em et al.\egroup
-  }{2015}]{mashayekhy2015ptas}
-Lena Mashayekhy, Mahyar~Movahed Nejad, and Daniel Grosu.
-\newblock A ptas mechanism for provisioning and allocation of heterogeneous
-  cloud resources.
-\newblock {\em IEEE Transactions on Parallel and Distributed Systems},
-  26(9):2386--2399, 2015.
-
 \bibitem[\protect\citeauthoryear{Matt}{2018}]{matt2018fog}
 Christian Matt.
 \newblock Fog computing.
@@ -624,11 +482,6 @@ Mahammad~Shareef Mekala and P~Viswanathan.
 \newblock A survey: Smart agriculture iot with cloud computing.
 \newblock In {\em 2017 International conference on Microelectronic Devices,
   Circuits and Systems (ICMDCS)}, pages 1--7. IEEE, 2017.
-
-\bibitem[\protect\citeauthoryear{Moulin}{2004}]{moulin2004fair}
-Herv{\'e} Moulin.
-\newblock {\em Fair division and collective welfare}.
-\newblock MIT press, 2004.
 
 \bibitem[\protect\citeauthoryear{Muensterer \bgroup \em et al.\egroup
   }{2014}]{muensterer2014google}
@@ -642,33 +495,20 @@ Oliver~J Muensterer, Martin Lacher, Christoph Zoeller, Matthew Bronstein, and
 Iyswarya Narayanan, Aman Kansal, Anand Sivasubramaniam, Bhuvan Urgaonkar, and
   Sriram Govindan.
 \newblock Towards a leaner geo-distributed cloud infrastructure.
-\newblock In {\em 6th $\{$USENIX$\}$ Workshop on Hot Topics in Cloud Computing
-  (HotCloud 14)}, 2014.
+\newblock In {\em 6th {USENIX} Workshop on Hot Topics in Cloud Computing},
+  2014.
 
-\bibitem[\protect\citeauthoryear{Nejad \bgroup \em et al.\egroup
-  }{2015}]{nejad2015truthful}
-Mahyar~Movahed Nejad, Lena Mashayekhy, and Daniel Grosu.
-\newblock Truthful greedy mechanisms for dynamic virtual machine provisioning
-  and allocation in clouds.
-\newblock {\em IEEE transactions on parallel and distributed systems},
-  26(2):594--603, 2015.
-
-\bibitem[\protect\citeauthoryear{Nejad \bgroup \em et al.\egroup
-  }{2017}]{nejad2017online}
-Mark~M Nejad, Lena Mashayekhy, Ratna~Babu Chinnam, and Daniel Grosu.
-\newblock Online scheduling and pricing for electric vehicle charging.
-\newblock {\em IISE Transactions}, 49(2):178--193, 2017.
+\bibitem[\protect\citeauthoryear{Nisan}{}]{nisan2000bidding}
+Noam Nisan.
+\newblock Bidding and allocation in combinatorial auctions.
+\newblock In {\em Proceedings of the 2nd ACM conference on Electronic
+  commerce}, pages 1--12, New York, NY, USA. ACM.
 
 \bibitem[\protect\citeauthoryear{Nisan \bgroup \em et al.\egroup
   }{2007}]{nisan2007algorithmic}
 Noam Nisan, Tim Roughgarden, Eva Tardos, and Vijay~V Vazirani.
 \newblock {\em Algorithmic game theory}.
 \newblock Cambridge university press, 2007.
-
-\bibitem[\protect\citeauthoryear{Nisan}{2000}]{nisan2000bidding}
-Noam Nisan.
-\newblock Bidding and allocation in combinatorial auctions.
-\newblock In {\em EC}, pages 1--12. Citeseer, 2000.
 
 \bibitem[\protect\citeauthoryear{Okay and Ozdemir}{2016}]{okay2016fog}
 Feyza~Yildirim Okay and Suat Ozdemir.
@@ -683,13 +523,6 @@ Jessica Oueis, Emilio~Calvanese Strinati, and Sergio Barbarossa.
 \newblock In {\em 2015 IEEE 81st Vehicular Technology Conference (VTC Spring)},
   pages 1--6. IEEE, 2015.
 
-\bibitem[\protect\citeauthoryear{Parikh \bgroup \em et al.\egroup
-  }{2014}]{parikh2014proximal}
-Neal Parikh, Stephen Boyd, et~al.
-\newblock Proximal algorithms.
-\newblock {\em Foundations and Trends{\textregistered} in Optimization},
-  1(3):127--239, 2014.
-
 \bibitem[\protect\citeauthoryear{Parsons and
   Wooldridge}{2002}]{parsons2002game}
 Simon Parsons and Michael Wooldridge.
@@ -701,11 +534,6 @@ Nisha Peter.
 \newblock Fog computing and its real time applications.
 \newblock {\em International Journal of Emerging Technology and Advanced
   Engineering}, 5(6):266--269, 2015.
-
-\bibitem[\protect\citeauthoryear{Porter}{1999}]{porter1999effect}
-David~P Porter.
-\newblock The effect of bid withdrawal in a multi-object auction.
-\newblock {\em Review of Economic Design}, 4(1):73--97, 1999.
 
 \bibitem[\protect\citeauthoryear{Qayyum \bgroup \em et al.\egroup
   }{2018}]{qayyum2018fognetsim++}
@@ -730,12 +558,6 @@ Dadmehr Rahbari and Mohsen Nickray.
 \newblock In {\em 2017 21st Conference of Open Innovations Association
   (FRUCT)}, pages 278--283. IEEE, 2017.
 
-\bibitem[\protect\citeauthoryear{Ray and Ventresca}{2018}]{ray2018ant}
-Abhishek Ray and Mario Ventresca.
-\newblock An ant colony approach for the winner determination problem.
-\newblock In {\em European Conference on Evolutionary Computation in
-  Combinatorial Optimization}, pages 174--188. Springer, 2018.
-
 \bibitem[\protect\citeauthoryear{Reiss \bgroup \em et al.\egroup
   }{2011}]{reiss2011google}
 Charles Reiss, John Wilkes, and Joseph~L Hellerstein.
@@ -754,7 +576,7 @@ Vincent Ricquebourg, David Menga, David Durand, Bruno Marhic, Laurent
   }{2016}]{roblek2016complex}
 Vasja Roblek, Maja Me{\v{s}}ko, and Alojz Krape{\v{z}}.
 \newblock A complex view of industry 4.0.
-\newblock {\em Sage Open}, 6(2):2158244016653987, 2016.
+\newblock {\em Sage Open}, 6(2):1--11, 2016.
 
 \bibitem[\protect\citeauthoryear{Robu \bgroup \em et al.\egroup
   }{2011}]{robu2011online}
@@ -769,56 +591,10 @@ B~Myerson Roger.
 \newblock Game theory: analysis of conflict.
 \newblock {\em The President and Fellows of Harvard College, USA}, 1991.
 
-\bibitem[\protect\citeauthoryear{Roos and Rothe}{2010}]{roos2010complexity}
-Magnus Roos and J{\"o}rg Rothe.
-\newblock Complexity of social welfare optimization in multiagent resource
-  allocation.
-\newblock In {\em Proceedings of the 9th International Conference on Autonomous
-  Agents and Multiagent Systems: volume 1-Volume 1}, pages 641--648.
-  International Foundation for Autonomous Agents and Multiagent Systems, 2010.
-
 \bibitem[\protect\citeauthoryear{Rothe}{2015}]{rothe2015economics}
 J{\"o}rg Rothe.
 \newblock {\em Economics and computation}, volume~4.
 \newblock Springer, 2015.
-
-\bibitem[\protect\citeauthoryear{Rothkopf \bgroup \em et al.\egroup
-  }{1998}]{rothkopf1998computationally}
-Michael~H Rothkopf, Aleksandar Peke{\v{c}}, and Ronald~M Harstad.
-\newblock Computationally manageable combinational auctions.
-\newblock {\em Management science}, 44(8):1131--1147, 1998.
-
-\bibitem[\protect\citeauthoryear{Sandholm and
-  Suri}{2000}]{sandholm2000improved}
-Tuomas Sandholm and Subhash Suri.
-\newblock Improved algorithms for optimal winner determination in combinatorial
-  auctions and generalizations.
-\newblock In {\em AAAI/IAAI}, pages 90--97, 2000.
-
-\bibitem[\protect\citeauthoryear{Sandholm and Suri}{2003}]{sandholm2003bob}
-Tuomas Sandholm and Subhash Suri.
-\newblock Bob: Improved winner determination in combinatorial auctions and
-  generalizations.
-\newblock {\em Artificial Intelligence}, 145(1-2):33--58, 2003.
-
-\bibitem[\protect\citeauthoryear{Sandholm \bgroup \em et al.\egroup
-  }{2002}]{sandholm2002winner}
-Tuomas Sandholm, Subhash Suri, Andrew Gilpin, and David Levine.
-\newblock Winner determination in combinatorial auction generalizations.
-\newblock In {\em Proceedings of the first international joint conference on
-  Autonomous agents and multiagent systems: part 1}, pages 69--76. ACM, 2002.
-
-\bibitem[\protect\citeauthoryear{Sandholm \bgroup \em et al.\egroup
-  }{2005}]{sandholm2005cabob}
-Tuomas Sandholm, Subhash Suri, Andrew Gilpin, and David Levine.
-\newblock Cabob: A fast optimal algorithm for winner determination in
-  combinatorial auctions.
-\newblock {\em Management Science}, 51(3):374--390, 2005.
-
-\bibitem[\protect\citeauthoryear{Sandholm}{2002}]{sandholm2002algorithm}
-Tuomas Sandholm.
-\newblock Algorithm for optimal winner determination in combinatorial auctions.
-\newblock {\em Artificial intelligence}, 135(1-2):1--54, 2002.
 
 \bibitem[\protect\citeauthoryear{Sarkar \bgroup \em et al.\egroup
   }{2018}]{sarkar2018assessment}
@@ -866,7 +642,7 @@ Weijie Shi, Linquan Zhang, Chuan Wu, Zongpeng Li, and Francis Lau.
 Weijie Shi, Chuan Wu, and Zongpeng Li.
 \newblock A shapley-value mechanism for bandwidth on demand between
   datacenters.
-\newblock {\em IEEE Transactions on Cloud Computing}, 2015.
+\newblock {\em IEEE Transactions on Cloud Computing}, 6(1):19--32, 2015.
 
 \bibitem[\protect\citeauthoryear{Shi \bgroup \em et al.\egroup
   }{2016}]{shi2016online}
@@ -933,7 +709,7 @@ Mohit Taneja and Alan Davy.
 
 \bibitem[\protect\citeauthoryear{TongKe}{2013}]{tongke2013smart}
 Fan TongKe.
-\newblock Smart agriculture based on cloud computing and iot.
+\newblock Smart agriculture based on cloud computing and {IOT}.
 \newblock {\em Journal of Convergence Information Technology}, 8(2), 2013.
 
 \bibitem[\protect\citeauthoryear{Tordera \bgroup \em et al.\egroup
@@ -1000,13 +776,6 @@ Yu~Xiao and Chao Zhu.
 \newblock In {\em 2017 IEEE International Conference on Pervasive Computing and
   Communications Workshops (PerCom Workshops)}, pages 6--9. IEEE, 2017.
 
-\bibitem[\protect\citeauthoryear{Xu \bgroup \em et al.\egroup
-  }{2017}]{xu2017zenith}
-Jinlai Xu, Balaji Palanisamy, Heiko Ludwig, and Qingyang Wang.
-\newblock Zenith: Utility-aware resource allocation for edge computing.
-\newblock In {\em Edge Computing (EDGE), 2017 IEEE International Conference
-  on}, pages 47--54. IEEE, 2017.
-
 \bibitem[\protect\citeauthoryear{Yang \bgroup \em et al.\egroup
   }{2018}]{yang2018communication}
 Xiao Yang, Zhiyong Chen, Kuikui Li, Yaping Sun, Ning Liu, Weiliang Xie, and
@@ -1030,29 +799,12 @@ Quan Yuan, Haibo Zhou, Jinglin Li, Zhihan Liu, Fangchun Yang, and
   edge computing solution.
 \newblock {\em IEEE Network}, 32(1):80--86, 2018.
 
-\bibitem[\protect\citeauthoryear{Zaman and
-  Grosu}{2011}]{zaman2011combinatorial}
-Sharrukh Zaman and Daniel Grosu.
-\newblock Combinatorial auction-based dynamic vm provisioning and allocation in
-  clouds.
-\newblock In {\em Cloud Computing Technology and Science (CloudCom), 2011 IEEE
-  Third International Conference on}, pages 107--114. IEEE, 2011.
-
 \bibitem[\protect\citeauthoryear{Zeng \bgroup \em et al.\egroup
   }{2016}]{zeng2016joint}
 Deze Zeng, Lin Gu, Song Guo, Zixue Cheng, and Shui Yu.
 \newblock Joint optimization of task scheduling and image placement in fog
   computing supported software-defined embedded system.
 \newblock {\em IEEE Transactions on Computers}, 65(12):3702--3712, 2016.
-
-\bibitem[\protect\citeauthoryear{Zhang \bgroup \em et al.\egroup
-  }{2014}]{zhang2014dynamic}
-Linquan Zhang, Zongpeng Li, and Chuan Wu.
-\newblock Dynamic resource provisioning in cloud computing: A randomized
-  auction approach.
-\newblock In {\em IEEE Infocom Proceedings}. IEEE Computer Society. The
-  Journal's web site is located at http://ieeexplore. ieee. org/xpl/conhome.
-  jsp? punumber= 1000359, 2014.
 
 \bibitem[\protect\citeauthoryear{Zhang \bgroup \em et al.\egroup
   }{2015a}]{zhang2015online}

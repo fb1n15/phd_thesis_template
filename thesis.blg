@@ -3,136 +3,138 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 The style file: named.bst
 Database file #1: thesis.bib
+Warning--entry type for "evans2017evaluating" isn't style-file defined
+--line 191 of file thesis.bib
 Repeated entry---line 272 of file thesis.bib
  : @inproceedings{yi2015survey
  :                            ,
 I'm skipping whatever remains of this entry
 Warning--string name "august" is undefined
---line 372 of file thesis.bib
-I was expecting a `,' or a `}'---line 375 of file thesis.bib
+--line 374 of file thesis.bib
+I was expecting a `,' or a `}'---line 377 of file thesis.bib
  :  
  :  note = {Accessed: 2019-2-14}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 455 of file thesis.bib
+I was expecting a `,' or a `}'---line 461 of file thesis.bib
  :  
  :  note = {Accessed: 2019-3-31}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 654 of file thesis.bib
- : @article{mashayekhy2015ptas
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1032 of file thesis.bib
+Repeated entry---line 1038 of file thesis.bib
  : @inproceedings{yi2015survey
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1212 of file thesis.bib
+Repeated entry---line 1218 of file thesis.bib
  : @inproceedings{bouveret2011general
  :                                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1219 of file thesis.bib
+Repeated entry---line 1225 of file thesis.bib
  : @article{herreiner2002simple
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1250 of file thesis.bib
+Repeated entry---line 1260 of file thesis.bib
  : @book{rothe2015economics
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1905 of file thesis.bib
- : @inproceedings{intharawijitr2016analysis
- :                                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1924 of file thesis.bib
+Repeated entry---line 1934 of file thesis.bib
  : @article{agarwal2016efficient
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2147 of file thesis.bib
- : @article{hayakawa2018price
- :                           ,
+Repeated entry---line 2176 of file thesis.bib
+ : @inproceedings{hayakawa2018price
+ :                                 ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2216 of file thesis.bib
+I was expecting a `,' or a `}'---line 2247 of file thesis.bib
  :   author = Press 
  :                  Release,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2263 of file thesis.bib
- : @inproceedings{zhang2014dynamic
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2402 of file thesis.bib
+Repeated entry---line 2442 of file thesis.bib
  : @article{shi2014online
  :                       ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2663 of file thesis.bib
+I was expecting a `,' or a `}'---line 2703 of file thesis.bib
  :   
  :   year =  {2015}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 2684 of file thesis.bib
+Repeated entry---line 2724 of file thesis.bib
  : @article{gupta2017ifogsim
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2699 of file thesis.bib
+I was expecting a `,' or a `}'---line 2739 of file thesis.bib
  :   
  :   howpublished = {\url{https://tools.ietf.org/html/draft-brim-lisp-analysis-00}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 2784 of file thesis.bib
+Repeated entry---line 2824 of file thesis.bib
  : @article{garcia2015edge
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2917 of file thesis.bib
+I was expecting a `,' or a `}'---line 2957 of file thesis.bib
  :   
  :   howpublished = {\url{https://www.researchgate.net/publication/320225452_Total_Consumer_Power_Consumption_Forecast}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 2963 of file thesis.bib
+Repeated entry---line 3003 of file thesis.bib
  : @article{shi2017online
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--empty journal in hayakawa2015online
+Too many commas in name 1 of "Gabriel Evans,Jack Miller,Mariangely Iglesias Pena,Anastacia MacAllister,Eliot Winer" for entry evans2017evaluating
+while executing---line 1211 of file named.bst
+Too many commas in name 1 of "Gabriel Evans,Jack Miller,Mariangely Iglesias Pena,Anastacia MacAllister,Eliot Winer" for entry evans2017evaluating
+while executing---line 1211 of file named.bst
+Too many commas in name 1 of "Gabriel Evans,Jack Miller,Mariangely Iglesias Pena,Anastacia MacAllister,Eliot Winer" for entry evans2017evaluating
+while executing---line 1211 of file named.bst
+Too many commas in name 1 of "Gabriel Evans,Jack Miller,Mariangely Iglesias Pena,Anastacia MacAllister,Eliot Winer" for entry evans2017evaluating
+while executing---line 1211 of file named.bst
+Too many commas in name 1 of "Gabriel Evans,Jack Miller,Mariangely Iglesias Pena,Anastacia MacAllister,Eliot Winer" for entry evans2017evaluating
+while executing---line 1280 of file named.bst
+Too many commas in name 1 of "Gabriel Evans,Jack Miller,Mariangely Iglesias Pena,Anastacia MacAllister,Eliot Winer" for entry evans2017evaluating
+while executing---line 1280 of file named.bst
 Warning--empty institution in liu2015distributed
+Warning--empty year in nisan2000bidding
 Warning--there's a number but no volume in satyanarayanan2009case
 Warning--can't use both volume and number fields in zhang2015online
-You've used 157 entries,
+You've used 121 entries,
             2439 wiz_defined-function locations,
-            1380 strings with 35890 characters,
-and the built_in function-call counts, 72690 in all, are:
-= -- 7708
-> -- 3086
-< -- 72
-+ -- 1095
-- -- 1056
-* -- 5794
-:= -- 11239
-add.period$ -- 535
-call.type$ -- 157
-change.case$ -- 1148
-chr.to.int$ -- 153
-cite$ -- 161
-duplicate$ -- 2937
-empty$ -- 5332
-format.name$ -- 1242
-if$ -- 15429
+            1200 strings with 29057 characters,
+and the built_in function-call counts, 56203 in all, are:
+= -- 5935
+> -- 2469
+< -- 54
++ -- 884
+- -- 850
+* -- 4526
+:= -- 8742
+add.period$ -- 410
+call.type$ -- 121
+change.case$ -- 904
+chr.to.int$ -- 117
+cite$ -- 125
+duplicate$ -- 2225
+empty$ -- 4066
+format.name$ -- 992
+if$ -- 11867
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 159
-newline$ -- 789
-num.names$ -- 471
-pop$ -- 1107
+missing$ -- 121
+newline$ -- 608
+num.names$ -- 363
+pop$ -- 865
 preamble$ -- 1
-purify$ -- 1310
+purify$ -- 1029
 quote$ -- 0
-skip$ -- 2399
+skip$ -- 1818
 stack$ -- 0
-substring$ -- 4180
-swap$ -- 927
-text.length$ -- 72
+substring$ -- 3182
+swap$ -- 690
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1232
+type$ -- 948
 warning$ -- 4
-while$ -- 635
-width$ -- 165
-write$ -- 2090
-(There were 20 error messages)
+while$ -- 486
+width$ -- 130
+write$ -- 1612
+(There were 23 error messages)
